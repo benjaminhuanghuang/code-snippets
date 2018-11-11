@@ -15,12 +15,14 @@
 - Python
 ```
   str = "Hello"
-  first = str[0]
+  first = str[0]      // 
 ```
 
 - JavaScript
+```
+```
 
-## Itrator the characters in the string
+## Iterate over the characters in the string
 - Java
 ```
   for (char c : s.toCharArray()) {

@@ -26,15 +26,12 @@
 ```
 - C#
 ```
-  string str = "Hello";
-  char first = str[0];
+
        
 ```
 
 - Python
 ```
-  str = "Hello"
-  first = str[0]
 ```
 
 - JavaScript
