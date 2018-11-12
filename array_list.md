@@ -43,6 +43,29 @@ var cars = ["Saab", "Volvo", "BMW"];
 ```
 ```
 
+## Array to list
+- Java
+```
+  Integer[] values = { 1, 3, 7 };
+  List<Integer> list = new ArrayList<Integer>(Arrays.asList(values));
+
+```
+- C#
+```
+  List<int> lst = new List<int>(new int[] { 10, 20, 10, 34, 113 });
+```
+```
+  var lst = new List<int>();
+  lst.AddRange(new int[] { 10, 20, 10, 34, 113 });
+```
+
+- Python
+```
+```
+- JavaScript
+```
+```
+
 ## Add, delete, modify
 - Java
 ```
@@ -55,6 +78,63 @@ var cars = ["Saab", "Volvo", "BMW"];
 
 - Python
 ```
+```
+- JavaScript
+```
+```
+
+## Merge two arrays 
+- Java
+```
+
+```
+- C#
+```  
+
+```
+- Python
+```
+  letters = []
+  nums = []
+  all = [letter[1] + " " + letter[0] for letter in letters] + nums
+```
+- JavaScript
+```
+```
+## Merge two lists 
+- Java
+```
+  List<String> listA = new ArrayList<String>();
+  listA.add("A");
+
+  List<String> listB = new ArrayList<String>();
+  listB.add("B");
+
+  List<String> listFinal = new ArrayList<String>();
+  listFinal.addAll(listA);
+  listFinal.addAll(listB);
+```
+or
+```
+  import org.apache.commons.collections.ListUtils;
+  List<String> listA = new ArrayList<String>();
+	listA.add("A");
+		
+	List<String> listB = new ArrayList<String>();
+	listB.add("B");
+
+	List<String> listFinal = ListUtils.union(listA, listB);
+```
+
+- C#
+```  
+
+```
+- Python
+```
+  letters = []
+  nums = []
+  all = [letter[1] + " " + letter[0] for letter in letters] + nums
 ```
 - JavaScript
 ```
