@@ -35,3 +35,19 @@
 ```
 
 - JavaScript
+By default the sort() method sorts the array: In ascending order With the items casted to strings
+```
+    arr.sort();
+```
+
+```
+    function comparator(a, b) {
+    return a > b ? 1 : b > a ? -1 : 0;
+    }
+
+    arr.sort(comparator);
+```
+A Shorter Way with Numbers
+```
+    arr.sort((a, b) => a - b);
+```

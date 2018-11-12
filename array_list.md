@@ -18,6 +18,8 @@ chars = ["a", "b", "c"]
 - JavaScript
 ```
 var cars = ["Saab", "Volvo", "BMW"];
+
+let newArr = new Array(10).fill(null);
 ```
 
 
