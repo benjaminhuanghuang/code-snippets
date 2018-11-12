@@ -15,14 +15,18 @@
 
 - Python
 ```
-import collections
-# 
-dict = collections.Counter('abcdaab')
-
-for letter in 'abcde':
-    print '%s : %d' % (letter, dict[letter])
-
+  import collections
+  # 
+  dict = collections.Counter('abcdaab')
+  # or
+  dict = {}
+  for c in s:
+      if c in h:
+          dict[c] += 1
+      else:
+          dict[c] = 1
 ```
+
 - JavaScript
 
 ## Exist or not

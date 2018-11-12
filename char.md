@@ -15,3 +15,14 @@ Python has only 'string' type no 'char' type. A single character like 'a' is sti
   i = ord('a')
 ```
 - JavaScript
+
+
+## Upper case vs lower case
+```
+// Upper case A - Z, 65 - 90
+// Lower case a - z, 97 - 122
+// a - A = 32
+
+a = A ^ (1<<5)
+A = a ^ (1<<5)
+```

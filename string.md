@@ -15,7 +15,7 @@
 - Python
 ```
   str = "Hello"
-  first = str[0]      // 
+  first = str[0]      // first is a string not char
 ```
 
 - JavaScript
@@ -37,6 +37,31 @@
 - Python
 
 - JavaScript
+
+## Reverse
+- Java
+```
+
+```
+- C#
+```  
+  char[] charArray = s.ToCharArray();
+  Array.Reverse( charArray );
+  return new string( charArray );
+```
+- Python
+```
+  reverse = string[::-1] 
+```
+- JavaScript
+```
+  // Using reverse() method for array
+  str.split("").reverse().join("");
+
+  // Using spread syntax (ES6) + reverse()
+  [...str].reverse().join('');
+
+```
 
 ## Sub string
 - Java
@@ -65,7 +90,9 @@
 ## String <-> Char array
 - Java
 ```
-  for (char c : s.toCharArray()) {
+  String s = "Hello";
+  char[] chars = s.toCharray();
+  for (char c : chars) {
            
   }
 ```
