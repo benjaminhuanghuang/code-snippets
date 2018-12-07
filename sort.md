@@ -51,3 +51,32 @@ A Shorter Way with Numbers
 ```
     arr.sort((a, b) => a - b);
 ```
+
+## Sort 2d array
+LC 406
+int[][] people
+- Java
+```
+   Arrays.sort(people,new Comparator<int[]>(){
+        @Override
+        public int compare(int[] o1, int[] o2){
+            return o1[0]!=o2[0]?-o1[0]+o2[0]:o1[1]-o2[1];
+        }
+    });
+```
+- C#
+```
+
+       
+```
+
+- Python
+```
+def my_cmp(p1,p2):
+    return cmp(p2[1],p1[1]) if p1[0]==p2[0] else cmp(p1[0],p2[0])
+
+people.sort(cmp=my_cmp,reverse=True)
+       
+```
+
+- JavaScript
