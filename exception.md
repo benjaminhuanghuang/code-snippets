@@ -1,5 +1,6 @@
 
-
+## Reference
+-[Python Exception hierarchy](https://docs.python.org/2/library/exceptions.html)
 
 ## Throw Exception
 - Java
@@ -13,7 +14,7 @@
 - Python
 ```
     if length < 2:
-        raise Exception()
+        raise ValueError('could not find %c in %s' % (ch,str))
 ```
 - JavaScript
 ```
