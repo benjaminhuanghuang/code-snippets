@@ -26,6 +26,7 @@
 ```
 - C#
 ```
+Array.Sort(nums, (i, j) => String.Compare(j.ToString() + i.ToString(), i.ToString() + j.ToString(), StringComparison.Ordinal));
 
        
 ```
