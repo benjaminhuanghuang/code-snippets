@@ -1,4 +1,5 @@
 # Hash map / Dictionary
+
 ## Calculate char numbers
 - Java
 ```
@@ -28,6 +29,7 @@
   import collections
   # 
   dict = collections.Counter('abcdaab')
+
   # or
   dict = {}
   for c in s:
@@ -38,6 +40,9 @@
 ```
 
 - JavaScript
+```
+```
+
 
 ## Exist or not
 - Java
@@ -71,6 +76,7 @@ if "model" in thisdict:
 - Java
 ```
   HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+  
   for (Character d : map.keySet()) {
 
   }
@@ -78,6 +84,16 @@ if "model" in thisdict:
   for (Integer i : map.values()) {
 
   }
+
+  HashMap<String, Integer> map = new HashMap<>();
+  int max = 0;
+  for (Map.Entry<String, Integer> entry : map.entrySet()) {
+      if (entry.getValue() > max) {
+          max = entry.getValue();
+          String mcw = entry.getKey();
+      }
+  }
+  
 ```
 - C#
 ```

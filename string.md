@@ -71,9 +71,11 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 ## Sub string
 - Java
 ```
-  for (char c : s.toCharArray()) {
-           
-  }
+  String s="hello";  
+  
+  string sub = s.substring(2);  // llo  [startIndex...]
+
+  System.out.println(s.substring(0,2));  //he  [startIndex, endIndex)
 ```
 - C#
 ```
@@ -91,6 +93,8 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 ```
 - JavaScript
 ```
+  var str = "Hello world!";
+  var res = str.substring(1, 4);   // [startIndex, endIndex)
 ```
 
 ## String <-> Char array
