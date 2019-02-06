@@ -19,7 +19,12 @@
 ```
 
 - JavaScript
+JS has only 'string' type no 'char' type. A single character like 'a' is still a string in JS.
 ```
+  let str = "Hello";
+  let c = s[0];
+  let c2 = s.charAt(0);    // c2 is a string.
+  
 ```
 
 ## Iterate over the characters in the string
@@ -85,7 +90,8 @@
   
 ```
 - JavaScript
-
+```
+```
 
 ## String <-> Char array
 - Java
@@ -111,3 +117,24 @@
   
 ```
 - JavaScript
+
+
+
+## Template literals
+- Java
+```
+
+```
+- C#
+```
+  return $"One for {input ?? "you"}, one for me.";
+```
+
+- Python
+```
+
+```
+- JavaScript
+```
+  return `One for ${name ? name : 'you'}, one for me.`;
+```

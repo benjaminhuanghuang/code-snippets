@@ -15,7 +15,10 @@ Python has only 'string' type no 'char' type. A single character like 'a' is sti
   i = ord('a')
 ```
 - JavaScript
-
+JS has only 'string' type no 'char' type. A single character like 'a' is still a string in JS.
+```
+"ABC".charCodeAt(0) 
+```
 
 ## Upper case vs lower case
 ```
