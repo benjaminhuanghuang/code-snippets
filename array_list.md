@@ -147,11 +147,17 @@ or
 - Java
 ```
   ArrayList newList = new ArrayList<>(oldList);
+
+  char[] temp = Arrays.copyOf(this.map, this.map.length); 
 ```
 
 - C#
 ```  
   List<int> newList = new List<int>(oldList));
+
+  char[] temp = new char[26];
+  Array.Copy(this.Map, temp, this.charMap.Length);
+
 ```
 - Python
 ```
