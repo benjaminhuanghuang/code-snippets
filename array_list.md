@@ -141,3 +141,23 @@ or
 - JavaScript
 ```
 ```
+
+
+## Clone
+- Java
+```
+  ArrayList newList = new ArrayList<>(oldList);
+```
+
+- C#
+```  
+  List<int> newList = new List<int>(oldList));
+```
+- Python
+```
+  newList = list(oldList)
+```
+- JavaScript
+```
+  let newList = [...oldList];
+```
