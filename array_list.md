@@ -3,7 +3,8 @@
 ## Init
 - Java
 ```
-  s.charAt(i)
+  int[] dp = new int[n+1];
+  Arrays.fill(dp, Integer.MAX_VALUE);
 ```
 - C#
 ```
