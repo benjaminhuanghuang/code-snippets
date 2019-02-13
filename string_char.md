@@ -1,5 +1,22 @@
 # String and char
+## Process chars in string
+- Java
+```
+```
 
+- C#
+```
+```
+
+- Python
+```
+  DNA_TO_RNA_MAP = {'G': 'C', 'C': 'G', 'T': 'A', 'A': 'U'}
+  return ''.join(DNA_TO_RNA_MAP[c] for c in dna_strand)
+```
+
+- JavaScript
+```
+```
 ## Sort chars in string
 - Java
 ```
