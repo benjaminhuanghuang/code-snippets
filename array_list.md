@@ -15,6 +15,8 @@
 Python does not have built-in support for Arrays, but Python lists can be used instead.
 ```
 chars = ["a", "b", "c"]
+lookup = [0] * 26
+   
 ```
 - JavaScript
 ```
