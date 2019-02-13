@@ -3,7 +3,9 @@
 ## Sort chars in string
 - Java
 ```
-
+  char tempArray[] = inputString.toCharArray(); 
+  Arrays.sort(tempArray); 
+  return new String(tempArray); 
 ```
 - C#
 ```  
@@ -16,10 +18,28 @@
 ```
 - Python
 ```
-
+  a = 'ZENOVW'
+  b = sorted(a) # sorted() returns a list ['E', 'N', 'O', 'V', 'W', 'Z'] 
+  c = ''.join(b)   # c is 'ENOVWZ'
 ```
 - JavaScript
 ```
+  var str='ACBacb';
+  str.split('').sort().join('');    // get 'ABCabc'
+```
+
+```
+  function case_insensitive_comp(strA, strB) {
+      return strA.toLowerCase().localeCompare(strB.toLowerCase());
+  }
+
+  var str = 'ACBacbA';
+  str = str.split("");
+  str = str.sort();
+  str = str.sort( case_insensitive_comp )
+  // concatenate the chunks in one string
+  str = str.join("");
+  alert(str);
 ```
 ## Access the characters in the string
 - Java

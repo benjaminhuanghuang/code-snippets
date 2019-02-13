@@ -102,8 +102,8 @@ if "model" in thisdict:
 
 - Python
 ```
-for k, v in thisdict.items():
-  print(k, v)
+  for k, v in thisdict.items():
+    print(k, v)
 ```
 - JavaScript
 

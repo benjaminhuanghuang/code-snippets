@@ -14,15 +14,20 @@
 - Python
 Python does not have built-in support for Arrays, but Python lists can be used instead.
 ```
-chars = ["a", "b", "c"]
-lookup = [0] * 26
-   
+  chars = ["a", "b", "c"]
+
+  lookup = [0] * 26
+
+  dp = [0 for _ in range(amount + 1)]   
+
+  seq_list = [[] for _ in range(n)]
+
 ```
 - JavaScript
 ```
-var cars = ["Saab", "Volvo", "BMW"];
+  var cars = ["Saab", "Volvo", "BMW"];
 
-let newArr = new Array(10).fill(null);
+  let newArr = new Array(10).fill(null);    
 ```
 
 
