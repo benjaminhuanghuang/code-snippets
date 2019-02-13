@@ -6,12 +6,15 @@
 ```
 - C#
 ```  
-  DateTime birthDate = 
-  return birthDate.AddSeconds(SECONDS);
+  DateTime value = new DateTime(2017, 1, 18);
+  return value.AddSeconds(SECONDS);
+  
+  DateTime today = DateTime.Today;
 ```
 - Python
 ```
-
+  from datetime import timedelta
+  return moment + timedelta(seconds=1e9)
 ```
 - JavaScript
 ```
