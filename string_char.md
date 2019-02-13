@@ -99,6 +99,7 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 - Python
 ```
   reverse = string[::-1] 
+  reverse = "".join(reversed(string)) 
 ```
 - JavaScript
 ```
