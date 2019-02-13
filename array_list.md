@@ -170,3 +170,74 @@ or
 ```
   let newList = [...oldList];
 ```
+
+
+## Check elements in array
+- Java
+```
+  Boolean[] items = ...;
+  List<Boolean> itemsList = Arrays.asList(items);
+  if (itemsList.stream().allMatch(e -> e)) {
+      // all
+  }
+  if (itemsList.stream().anyMatch(e -> e)) {
+      // any
+  }
+  
+```
+
+- C#
+```  
+  class Pet
+  {
+      public string Name { get; set; }
+      public int Age { get; set; }
+  }
+
+  Pet[] pets = { new Pet { Name="Barley", Age=10 },
+                  new Pet { Name="Boots", Age=4 },
+                  new Pet { Name="Whiskers", Age=6 } };
+
+  // Determine whether all pet names in the array start with 'B'.
+  bool allStartWithB = pets.All(pet => pet.Name.StartsWith("B"));
+
+
+```
+- Python
+```
+  lookup = [0] * 26
+  # all() function checks and returns True only if all the elements in the 
+  # given array is 'Truthy'. Here, 0 will be evaluated as 'Falsy' and any
+  # occurrance greater than 0 will evaluate as 'Truthy'
+  return all(lookup)
+
+  # The any() method returns True if any element of an iterable is True. If not, any() returns False.
+  any(lookup)
+```
+- JavaScript
+```
+  // The every() method tests whether all elements in the array pass the test implemented by the provided function.
+  function isBelowThreshold(currentValue) {
+    return currentValue < 40;
+  }
+
+  var array1 = [1, 30, 39, 29, 10, 13];
+
+  console.log(array1.every(isBelowThreshold));
+  // expected output: true
+
+
+  //The some() method tests whether at least one element in the array passes the test implemented by the provided function.
+  var array = [1, 2, 3, 4, 5];
+
+  var even = function(element) {
+    // checks whether an element is even
+    return element % 2 === 0;
+  };
+
+  console.log(array.some(even));
+  // expected output: true
+
+
+
+```
