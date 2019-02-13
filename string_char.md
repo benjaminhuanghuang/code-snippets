@@ -1,4 +1,4 @@
-# String
+# String and char
 ## Access the characters in the string
 - Java
 ```
@@ -141,4 +141,94 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 - JavaScript
 ```
   return `One for ${name ? name : 'you'}, one for me.`;
+```
+
+## Char <-> int
+- Java
+```
+  numbers[secret.charAt(i) - '0']
+```
+- C#
+```
+
+```
+
+- Python
+Python has only 'string' type no 'char' type. A single character like 'a' is still a string in Python.
+```
+  char = chr(97)
+  i = ord('a')
+```
+
+- JavaScript
+JS has only 'string' type no 'char' type. A single character like 'a' is still a string in JS.
+```
+"ABC".charCodeAt(0) 
+numbers[secret.charCodeAt(i) - '0'.charCodeAt(0)]
+```
+
+## Upper case vs lower case
+```
+// Upper case A - Z, 65 - 90
+// Lower case a - z, 97 - 122
+// a - A = 32
+
+a = A ^ (1<<5)
+A = a ^ (1<<5)
+```
+
+## isPangram Sample
+
+- Java
+```
+public boolean isPangram(String input) {
+    if (input == null || input.length() < 26) {
+        return false;
+    }
+    boolean[] used = new boolean[26];
+    for (char c : input.toCharArray()) {
+        if(Character.isLetter(c))
+            used[Character.toLowerCase(c) - 'a'] = true;
+    }
+
+    for (int i = 0; i < 26; i++) {
+        if (used[i] == false)
+            return false;
+    }
+    return true;
+}
+```
+- C#
+```
+public static bool IsPangram(string input)
+{
+  int[] letters = new int[26];
+  input = input.ToLower();
+  for (int i = 0; i < input.Length; i++)
+  {
+    if (Char.IsLetter(input[i]))
+    {
+      int pos = input[i] - 'a';
+      letters[pos]++;
+    }
+  }
+
+  for (int i = 0; i < 26; i++)
+  {
+    if (letters[i] == 0)
+      return false;
+  }
+  return true;
+}
+```
+- Python
+```
+  def is_pangram(sentence):
+    used = [0] * 26
+    sentence = sentence.lower()
+    for char in sentence:
+        if 'a' <= char <= 'z':   # is letter
+            index = ord(char) - ord('a')
+            used[index] += 1
+    return all(lookup)
 ```
