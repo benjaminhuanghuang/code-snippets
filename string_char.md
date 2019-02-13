@@ -1,4 +1,26 @@
 # String and char
+
+## Sort chars in string
+- Java
+```
+
+```
+- C#
+```  
+  sortedWord = baseWord.OrderBy(c => c).ToString();
+```
+```
+  char[] a = s.ToCharArray();
+  Array.Sort(a);
+  sorted = new string(a);
+```
+- Python
+```
+
+```
+- JavaScript
+```
+```
 ## Access the characters in the string
 - Java
 ```
