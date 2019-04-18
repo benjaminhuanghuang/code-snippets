@@ -1,17 +1,103 @@
 # Hash map / Dictionary
 # Create map
 - C++
-C++ 11
 ```
-#include <map>
+  #include <map>
+  using namespace std;
+  // C++ 11
+  map<int, char> m = {
+    {1, 'a'}, 
+    {3, 'b'}, 
+    {5, 'c'}, 
+    {7, 'd'}
+  };
+
+  // alias
+  typedef std::map<char, int> nucle_map;
+```
+- Java
+```
+
+```
+
+
+- C#
+```  
+
+```
+- Python
+```
+
+```
+- JavaScript
+```
+```
+- TypeScript
+```
+// Init
+let map = new Map([
+  [ "A", 1 ],
+  [ "B", 2 ],
+  [ "C", 3 ]
+]);
+
+// Using Object.entries
+const expectedCounts = new Map(Object.entries(
+  { car: 1, 
+    ':': 2, 
+    carpet: 1
+  }))   
+```
+## Iteration
+- C++
+```
+#include <iostream>
+#include <unordered_map>
 using namespace std;
 
-map<int, char> m = {{1, 'a'}, {3, 'b'}, {5, 'c'}, {7, 'd'}};
+unordered_map<int, string> m =
+{
+  {1, "one"},
+  {2, "two"},
+  {3, "three"}
+};
+
+for (auto const &pair: m)
+  std::cout << "{" << pair.first << " -> " << pair.second << "}\n";
 ```
-Using typedef
+- Java
 ```
-	typedef std::map<char, int> nucle_map;
+  HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+  
+  for (Character d : map.keySet()) {
+
+  }
+
+  for (Integer i : map.values()) {
+
+  }
+
+  HashMap<String, Integer> map = new HashMap<>();
+  int max = 0;
+  for (Map.Entry<String, Integer> entry : map.entrySet()) {
+      if (entry.getValue() > max) {
+          max = entry.getValue();
+          String mcw = entry.getKey();
+      }
+  }
+  
 ```
+- C#
+```
+  
+```
+
+- Python
+```
+  for k, v in thisdict.items():
+    print(k, v)
+```
+- JavaScript
 
 ## Calculate char numbers
 - Java
@@ -85,38 +171,5 @@ if "model" in thisdict:
 ```
 - JavaScript
 
-## Iteration
-- Java
-```
-  HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-  
-  for (Character d : map.keySet()) {
 
-  }
-
-  for (Integer i : map.values()) {
-
-  }
-
-  HashMap<String, Integer> map = new HashMap<>();
-  int max = 0;
-  for (Map.Entry<String, Integer> entry : map.entrySet()) {
-      if (entry.getValue() > max) {
-          max = entry.getValue();
-          String mcw = entry.getKey();
-      }
-  }
-  
-```
-- C#
-```
-  
-```
-
-- Python
-```
-  for k, v in thisdict.items():
-    print(k, v)
-```
-- JavaScript
 
