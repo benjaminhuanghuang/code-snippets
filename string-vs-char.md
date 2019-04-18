@@ -1,4 +1,23 @@
 # String and char
+## Iterat charactors in string
+- C++
+Using iterator
+```
+for (auto it = a.begin(); it != a.end(); ++it)
+{
+  auto index = std::distance(a.begin(), it);
+
+  differences += (a[index] != b[index]);
+}
+```
+Using index
+```
+for (auto index = 0u; index < a.size(); ++index)
+{
+  differences += (a[index] != b[index]);
+}
+```
+
 ## Process chars in string
 - Java
 ```

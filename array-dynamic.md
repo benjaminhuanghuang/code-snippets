@@ -39,8 +39,7 @@ Python does not have built-in support for Arrays, but Python lists can be used i
 
   let newArr = new Array(10).fill(null);    
 ```
-
-
+## Iteration
 
 
 
