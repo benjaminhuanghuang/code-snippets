@@ -3,7 +3,9 @@
 ## Init
 - C++
 ```
-  vector<T>
+  vector<int> nums {2, 7, 11, 15};
+
+  vector<int> nums = {2, 7, 11, 15};   // create a std::initializer_list<int>
 ```
 
 - Java

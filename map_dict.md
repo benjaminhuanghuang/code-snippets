@@ -1,4 +1,17 @@
 # Hash map / Dictionary
+# Create map
+- C++
+C++ 11
+```
+#include <map>
+using namespace std;
+
+map<int, char> m = {{1, 'a'}, {3, 'b'}, {5, 'c'}, {7, 'd'}};
+```
+Using typedef
+```
+	typedef std::map<char, int> nucle_map;
+```
 
 ## Calculate char numbers
 - Java

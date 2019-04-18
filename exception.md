@@ -3,6 +3,12 @@
 -[Python Exception hierarchy](https://docs.python.org/2/library/exceptions.html)
 
 ## Throw Exception
+- C++
+```
+    #include <stdexcept>
+
+    throw invalid_argument("Invalid input.");
+```
 - Java
 ```
   throw new IOException("Client not initialized");

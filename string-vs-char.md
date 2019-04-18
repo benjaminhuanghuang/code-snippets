@@ -1,4 +1,35 @@
 # String and char
+## String length
+- C++
+```
+  str.length()
+```
+- Java
+```
+ String s = "Hello Java String Method";
+ int length = s.length();
+```
+- C#
+```  
+string str = "abcdefg";
+int len = str.Length;      
+```
+- Python
+```
+string = "Hello" 
+length = len(string) 
+```
+- JavaScript
+```
+const str = "Hello World!";
+const n = str.length;
+```
+- TypeScript
+```
+var str: string = "Hello World"; 
+console.log("Length "+uname.length)
+```
+
 ## Iterat charactors in string
 - C++
 Using iterator
@@ -12,10 +43,19 @@ for (auto it = a.begin(); it != a.end(); ++it)
 ```
 Using index
 ```
-for (auto index = 0u; index < a.size(); ++index)
+for (auto index = 0u; index < a.length(); ++index)
 {
   differences += (a[index] != b[index]);
 }
+```
+Using for loop
+```
+const string sequence;
+
+for (const char c : sequence)
+{
+
+}  
 ```
 
 ## Process chars in string
