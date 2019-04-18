@@ -1,14 +1,18 @@
-# Array / List
+# Dynamic array
 
 ## Init
+- C++
+```
+  vector<T>
+```
+
 - Java
 ```
-  int[] dp = new int[n+1];
-  Arrays.fill(dp, Integer.MAX_VALUE);
+  ArrayList<T>
 ```
 - C#
 ```
-  char[] letters = { 'A', 'B', 'C' };
+  List<T>
 ```
 
 - Python
@@ -29,52 +33,16 @@ Python does not have built-in support for Arrays, but Python lists can be used i
 
   let newArr = new Array(10).fill(null);    
 ```
+- TypeScript
+```
+  var cars = ["Saab", "Volvo", "BMW"];
+
+  let newArr = new Array(10).fill(null);    
+```
 
 
-## List to array
-- Java
-```
-  List<String> wordList = new ArrayList<String>();
-  String[] results = new String[wordList.size()];
-  return wordList.toArray(results);
 
-```
-- C#
-```
-  List<string> list = new List<string>();  
-  string[] array = list.ToArray();
 
-```
-
-- Python
-```
-```
-- JavaScript
-```
-```
-
-## Array to list
-- Java
-```
-  Integer[] values = { 1, 3, 7 };
-  List<Integer> list = new ArrayList<Integer>(Arrays.asList(values));
-
-```
-- C#
-```
-  List<int> lst = new List<int>(new int[] { 10, 20, 10, 34, 113 });
-```
-```
-  var lst = new List<int>();
-  lst.AddRange(new int[] { 10, 20, 10, 34, 113 });
-```
-
-- Python
-```
-```
-- JavaScript
-```
-```
 
 ## Add, delete, modify
 - Java
