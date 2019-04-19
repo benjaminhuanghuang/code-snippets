@@ -1,4 +1,5 @@
 ## List to array
+- C
 - Java
 ```
   List<String> wordList = new ArrayList<String>();
@@ -20,6 +21,9 @@
 ```
 ```
 ## Array to list
+- C++
+```
+```
 - Java
 ```
   Integer[] values = { 1, 3, 7 };
@@ -37,7 +41,9 @@
 
 - Python
 ```
+N/A
 ```
 - JavaScript
 ```
+N/A
 ```

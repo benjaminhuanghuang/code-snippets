@@ -43,7 +43,11 @@ Python does not have built-in support for Arrays, but Python lists can be used i
 ```
 ## Iteration
 
-
+- JavaScript
+```
+for (let element of array) {
+{}
+```
 
 ## Add, delete, modify
 - Java

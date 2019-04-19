@@ -1,8 +1,15 @@
-# String and char
+# String Operations
+- String length
+- Iteration
+- Reverse
+- Modify(insert, append, delete, change charactor)
+- Convert with number
+
 ## String length
 - C++
 ```
-  str.length()
+  std:: string str;    // create str = ""
+  str.length();
 ```
 - Java
 ```
@@ -172,6 +179,12 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
   Array.Reverse( charArray );
   return new string( charArray );
 ```
+Uing Linq
+```
+  using System.Linq;
+  return new string(input.Reverse().ToArray());
+```
+
 - Python
 ```
   reverse = string[::-1] 
@@ -217,6 +230,10 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 ```
 
 ## String <-> Char array
+- C++
+```
+  N/A
+```
 - Java
 ```
   String s = "Hello";
