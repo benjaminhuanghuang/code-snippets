@@ -47,6 +47,16 @@ Python does not have built-in support for Arrays, but Python lists can be used i
 ```
 for (let element of array) {
 {}
+
+for (let element in array) {
+{}
+```
+
+- Python
+```
+tickers = [1, 2, 3]
+for i, ticker in enumerate(tickers):
+  pass
 ```
 
 ## Add, delete, modify
