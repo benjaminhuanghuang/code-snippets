@@ -11,26 +11,31 @@
   std:: string str;    // create str = ""
   str.length();
 ```
+
 - Java
 ```
  String s = "Hello Java String Method";
  int length = s.length();
 ```
+
 - C#
 ```  
 string str = "abcdefg";
 int len = str.Length;      
 ```
+
 - Python
 ```
 string = "Hello" 
 length = len(string) 
 ```
+
 - JavaScript
 ```
 const str = "Hello World!";
 const n = str.length;
 ```
+
 - TypeScript
 ```
 var str: string = "Hello World"; 
@@ -174,6 +179,10 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
   std::string s= input;
   reverse(s.begin(), s.end());
   return s;
+```
+Better one using reverse_iterator
+```
+  return std::string(input.rbegin(), input.rend());;
 ```
 - Java
 ```
