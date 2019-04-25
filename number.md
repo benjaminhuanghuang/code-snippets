@@ -1,4 +1,10 @@
 ## Min and Max of numbers
+- C++
+```
+  #include <climits>
+  std::cout<<"maximum value of int: "<<INT_MAX<<'\n';
+	std::cout<<"minimum value of int: "<<INT_MIN<<'\n';
+```
 - Java
 ```
 int min = Integer.MIN_VALUE;

@@ -169,6 +169,12 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 - JavaScript
 
 ## Reverse
+- C++
+```
+  std::string s= input;
+  reverse(s.begin(), s.end());
+  return s;
+```
 - Java
 ```
 

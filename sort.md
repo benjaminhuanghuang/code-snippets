@@ -1,5 +1,11 @@
 # Sort
 ## Sort string items in list
+- C++
+```
+    sort(begin(ans), end(ans), [r0, c0](const auto& a, const auto& b){
+        return abs(a[0]-r0) + abs(a[1]-c0) < abs(b[0]-r0) + abs(b[1]-c0) ;
+    });
+```
 - Java
 ```
   List<String> letterLogs = new ArrayList<>();
