@@ -1,5 +1,17 @@
 # Date
 ## Add
+- C++
+```
+#include "boost/date_time/posix_time/posix_time.hpp"
+using namespace boost::posix_time;
+static const long GIGA_SECOND = 1e9;
+
+ptime advance(ptime time)
+{
+  return time + seconds(GIGA_SECOND);
+}
+
+```
 - Java
 ```
 
@@ -29,4 +41,8 @@
 
   console.log(date1 - date2);
   // expected output: 0
+```
+getTime() returns the number of milliseconds between midnight of January 1, 1970
+```
+   return new Date(this.initDate.getTime() + Gigasecond.MILLISECONDS_IN_A_GIGASECOND);
 ```
