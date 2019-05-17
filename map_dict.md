@@ -81,10 +81,30 @@ unordered_map<int, string> m =
   {3, "three"}
 };
 
+// C++ 11
 for (auto const &pair: m)
   std::cout << "{" << pair.first << " -> " << pair.second << "}\n";
+
+// C++ 17
+for( auto const& [key, val] : m )
+{
+
+}
+```
+Using iterator
+```
+std::map<char,int> mymap;
+
+mymap['b'] = 100;
+mymap['a'] = 200;
+mymap['c'] = 300;
+
+for (std::map<char,int>::iterator it=mymap.begin(); it!=mymap.end(); ++it)
+  std::cout << it->first << " => " << it->second << '\n';
 ```
 - Java
+Using map.keySet(), map.values(), map.entrySet()
+
 ```
   HashMap<Character, Integer> map = new HashMap<Character, Integer>();
   
@@ -116,6 +136,12 @@ for (auto const &pair: m)
   for k, v in thisdict.items():
     print(k, v)
 ```
+- Go
+```
+  for k, v in thisdict.items():
+    print(k, v)
+```
+
 - JavaScript
 
 ## Calculate char numbers
