@@ -389,7 +389,7 @@ public static bool IsPangram(string input)
     return all(lookup)
 ```
 
-## Trim or strip
+## Trim
 - C++
 ```
   const std::string WHITESPACE = " \n\r\t\f\v";
@@ -457,6 +457,53 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
 - Python
 ```
 
+```
+- Go
+```
+```
+
+- JavaScript
+```
+
+```
+
+- TypeScript
+```
+```
+
+## Strip
+- C++
+```
+  #include <algorithm>
+  #include <string>
+  using namespace std;
+  str.erase(remove(str.begin(), str.end(), char_to_remove), str.end());
+
+```
+
+- Java
+Using regex replace
+```
+static String removeSpace(String str) 
+{ 
+    str = str.replaceAll("\\s",""); 
+    return str; 
+} 
+```
+
+- C#
+```  
+static String removeSpace(String str)  
+{  
+    str = str.Replace(" ","");  
+    return str;  
+}  
+```
+- Python
+```
+def removeSpaces(string): 
+    string = string.replace(' ','') 
+    return string 
 ```
 - Go
 ```
