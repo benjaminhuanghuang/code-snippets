@@ -194,6 +194,8 @@ Better one using reverse_iterator
 
 ```
 - C#
+
+Using Array.Reverse
 ```  
   char[] charArray = s.ToCharArray();
   Array.Reverse( charArray );
@@ -211,13 +213,13 @@ Uing Linq
   reverse = "".join(reversed(string)) 
 ```
 - JavaScript
+Using reverse() method for array
 ```
-  // Using reverse() method for array
   str.split("").reverse().join("");
-
-  // Using spread syntax (ES6) + reverse()
+```
+Using spread syntax (ES6) + reverse()
+```
   [...str].reverse().join('');
-
 ```
 
 ## Sub string
