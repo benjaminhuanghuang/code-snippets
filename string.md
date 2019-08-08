@@ -508,9 +508,9 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
 ```
   #include <algorithm>
   #include <string>
-  using namespace std;
-  str.erase(remove(str.begin(), str.end(), char_to_remove), str.end());
-
+  std::string str("nie-longlove-sliyawe-i");
+  auto itor = remove(str.begin(), str.end(), 'e');
+  str.erase(itor, str.end());
 ```
 
 - Java
