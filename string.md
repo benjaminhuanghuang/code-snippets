@@ -12,8 +12,10 @@
 [Back](#string-operations)
 
 - C++
-Both string::size and string::length are synonyms and return the same value. (http://www.cplusplus.com/reference/string/string/size/)
+
 string.length() returns the length of the string, in terms of bytes.
+
+Both string::size and string::length are synonyms and return the same value. (http://www.cplusplus.com/reference/string/string/size/)
 
 ```
   std:: string str;    // create str = ""
