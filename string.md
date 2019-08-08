@@ -1,15 +1,21 @@
 # String Operations
 - String length
 - Iteration
+- Sort
 - Reverse
 - Modify(insert, append, delete, change charactor)
 - Convert with number
+- Trim or stripped
 
 ## String length
 - C++
+Both string::size and string::length are synonyms and return the same value. (http://www.cplusplus.com/reference/string/string/size/)
+string.length() returns the length of the string, in terms of bytes.
+
 ```
   std:: string str;    // create str = ""
   str.length();
+  str.size();
 ```
 
 - Java
@@ -70,7 +76,6 @@ for (const char c : sequence)
 }  
 ```
 
-## Process chars in string
 - Java
 ```
 ```
@@ -382,4 +387,86 @@ public static bool IsPangram(string input)
             index = ord(char) - ord('a')
             used[index] += 1
     return all(lookup)
+```
+
+## Trim or strip
+- C++
+```
+  const std::string WHITESPACE = " \n\r\t\f\v";
+
+  std::string ltrim(const std::string& s)
+  {
+    size_t start = s.find_first_not_of(WHITESPACE);
+    return (start == std::string::npos) ? "" : s.substr(start);
+  }
+
+  std::string rtrim(const std::string& s)
+  {
+    size_t end = s.find_last_not_of(WHITESPACE);
+    return (end == std::string::npos) ? "" : s.substr(0, end + 1);
+  }
+
+  std::string trim(const std::string& s)
+  {
+    return rtrim(ltrim(s));
+  }
+
+  std::string trim_simple(const std::string &s)
+  {
+    size_t start = s.find_first_not_of(" ");
+    size_t end = s.find_last_not_of(" ");
+    return (start == std::string::npos || end == std::string::npos "" ) ? "" : s.substr(start, end + 1);
+  }
+  
+  int main()
+  {
+    std::string s = "\n\tHello World \r\n";
+    std::cout << "START::" << trim(s) << "::END";
+
+    return 0;
+  }
+```
+
+- Java
+```
+// trims the trailing and leading spaces  
+String s = " geeks for geeks has all java functions to read  ";  
+System.out.println(s.trim());   
+      
+```
+Using regex
+```
+System.out.println("//test/me".replaceAll("^/+", ""));
+Trailing:
+
+System.out.println("//test/me//".replaceAll("/+$", ""));
+```
+
+Using  Apache StringUtils
+```
+System.out.println(StringUtils.stripStart("//test/me", "/"));
+System.out.println(StringUtils.stripEnd("//test/me", "/"));
+
+```
+
+
+- C#
+```  
+
+```
+- Python
+```
+
+```
+- Go
+```
+```
+
+- JavaScript
+```
+
+```
+
+- TypeScript
+```
 ```
