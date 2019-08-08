@@ -7,7 +7,8 @@
 ```
     #include <stdexcept>
 
-    throw invalid_argument("Invalid input.");
+    throw std::invalid_argument("Invalid input.");
+    throw std:: domain_error( "error" );
 ```
 - Java
 ```
