@@ -1,13 +1,16 @@
 # String Operations
-- String length
+- [String length](#string-length)
 - Iteration
 - Sort
 - Reverse
 - Modify(insert, append, delete, change charactor)
 - Convert with number
-- Trim or stripped
+- [Trim](#trim)
+- stripped
 
-## String length
+## String length  
+[Back](#string-operations)
+
 - C++
 Both string::size and string::length are synonyms and return the same value. (http://www.cplusplus.com/reference/string/string/size/)
 string.length() returns the length of the string, in terms of bytes.
@@ -49,6 +52,8 @@ console.log("Length "+uname.length)
 ```
 
 ## Iterat charactors in string
+[Back](#string-operations)
+
 - C++
 Using iterator
 ```
@@ -94,6 +99,8 @@ for (const char c : sequence)
 ```
 ```
 ## Sort chars in string
+[Back](#string-operations)
+
 - Java
 ```
   char tempArray[] = inputString.toCharArray(); 
@@ -135,6 +142,8 @@ for (const char c : sequence)
   alert(str);
 ```
 ## Access the characters in the string
+[Back](#string-operations)
+
 - Java
 ```
   String str = "Hello";
@@ -163,6 +172,8 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 ```
 
 ## Iterate over the characters in the string
+[Back](#string-operations)
+
 - Java
 ```
   for (char c : s.toCharArray()) {
@@ -179,6 +190,8 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 - JavaScript
 
 ## Reverse
+[Back](#string-operations)
+
 - C++
 ```
   std::string s= input;
@@ -223,6 +236,8 @@ Using spread syntax (ES6) + reverse()
 ```
 
 ## Sub string
+[Back](#string-operations)
+
 - Java
 ```
   String s="hello";  
@@ -252,6 +267,8 @@ Using spread syntax (ES6) + reverse()
 ```
 
 ## String <-> Char array
+[Back](#string-operations)
+
 - C++
 ```
   N/A
@@ -283,6 +300,10 @@ Using spread syntax (ES6) + reverse()
 
 
 ## Template literals
+[Back](#string-operations)
+- C++
+```
+```
 - Java
 ```
 
@@ -302,6 +323,8 @@ Using spread syntax (ES6) + reverse()
 ```
 
 ## Char <-> int
+[Back](#string-operations)
+
 - Java
 ```
   numbers[secret.charAt(i) - '0']
@@ -326,6 +349,8 @@ numbers[secret.charCodeAt(i) - '0'.charCodeAt(0)]
 ```
 
 ## Upper case vs lower case
+[Back](#string-operations)
+- C++
 ```
 // Upper case A - Z, 65 - 90
 // Lower case a - z, 97 - 122
@@ -391,7 +416,8 @@ public static bool IsPangram(string input)
     return all(lookup)
 ```
 
-## Trim
+## Trim 
+[Back](#string-operations)
 - C++
 ```
   const std::string WHITESPACE = " \n\r\t\f\v";
@@ -474,6 +500,8 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
 ```
 
 ## Strip
+[Back](#string-operations)
+
 - C++
 ```
   #include <algorithm>
