@@ -512,6 +512,18 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
   auto itor = remove(str.begin(), str.end(), 'e');
   str.erase(itor, str.end());
 ```
+- C
+```
+void removeSpaces(char *str) 
+{ 
+    int count = 0; 
+  
+    for (int i = 0; str[i]; i++) 
+        if (str[i] != ' ') 
+            str[count++] = str[i]; // here count is 
+    str[count] = '\0'; 
+} 
+```  
 
 - Java
 Using regex replace
