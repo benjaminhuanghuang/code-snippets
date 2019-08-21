@@ -1,7 +1,14 @@
 
 # Array
+- [Create array with init value](#create-array-with-init-value)
+
+- [Array size](#array-size)
+
+- [Iteration](#iteration)
 
 ## Create array with init value
+[Back](#array)
+
 ### C++
 ```
   T arr[5];
@@ -104,6 +111,84 @@ Python does not have built-in support for Arrays, but Python lists can be used i
 
 
 
+
+## Array size
+std::array::size() returns the number of elements in the array container.
+language operator sizeof() returns the size in bytes
+### C++
+```
+  std::array<int,5> myints;
+  std::cout << "size of myints: " << myints.size() << std::endl;          // 5
+  std::cout << "sizeof(myints): " << sizeof(myints) << std::endl;         // 20
+```
+
+### C
+```
+  int array_size = sizeof(array)/sizeof(int);
+
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+### Python
+```
+
+```
+### Go
+```
+```
+
+### JavaScript
+```
+```
+### TypeScript
+```
+```
+## Iteration
+[Back](#array)
+### C++
+```
+
+```
+### C
+```
+  int array_size = sizeof(array)/sizeof(int);
+  for(int i =0 ;i < array_size; i++)
+  {
+
+  }
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+### Python
+```
+
+```
+### Go
+```
+```
+
+### JavaScript
+```
+```
+### TypeScript
+```
+```
 ## Array to list
 - Java
 ```
