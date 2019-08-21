@@ -1,4 +1,5 @@
 # String Operations
+- [String format](#string-length)
 - [String length](#string-length)
 - Iteration
 - Sort
@@ -7,6 +8,55 @@
 - Convert with number
 - [Trim](#trim)
 - stripped
+
+## String format
+[Back](#string-operations)
+### C++
+Using stringstream
+```
+  std::stringstream ret;
+
+  ret << std::setw(2) << std::setfill('0') << m_hours << ":" << std::setw(2)
+      << std::setfill('0') << m_minutes;
+  return ret.str();
+```
+Using printf
+```
+#include <cstdio>
+
+char buffer[6];
+std::sprintf(buffer, "%02d:%02d", m_hours, m_minutes);
+return buffer;
+```
+
+Using fmt library in C++ 20
+```
+return std::format("{:02}:{:02}", m_hours, m_minutes);
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+### Python
+```
+
+```
+### Go
+```
+```
+
+- JavaScript
+```
+```
+- TypeScript
+```
+```
 
 ## String length  
 [Back](#string-operations)

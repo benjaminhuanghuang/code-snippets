@@ -2,32 +2,32 @@
 -[用什么语言刷题？C++/Java/Python 横向大比较]
 
 ## Template
-- C++
+### C++
 ```
 
 ```
 
-- Java
+### Java
 ```
 
 ```
 
 
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
 
 ```
-- Go
+### Go
 ```
 ```
 
-- JavaScript
+### JavaScript
 ```
 ```
-- TypeScript
+### TypeScript
 ```
 ```
