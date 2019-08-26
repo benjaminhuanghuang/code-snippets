@@ -1,6 +1,6 @@
 # Hash map / Dictionary
 # Create map
-- C++
+### C++
 ```
   #include <map>
   using namespace std;
@@ -15,24 +15,38 @@
   // alias
   typedef std::map<char, int> nucle_map;
 ```
-- Java
+###### Java
 ```
 
 ```
 
 
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
 
 ```
-- JavaScript
+### JavaScript
 ```
+var first = new Map([
+  [1, 'one'],
+  [2, 'two'],
+  [3, 'three'],
+]);
 ```
-- TypeScript
+Method 2
+```
+var myMap = new Map();
+myMap.set(0, 'zero');
+myMap.set(1, 'one');
+for (var [key, value] of myMap) {
+  console.log(key + ' = ' + value);
+}
+```
+### TypeScript
 ```
 // Init
 let map = new Map([
@@ -49,7 +63,7 @@ const expectedCounts = new Map(Object.entries(
   }))   
 ```
 ## Access item
-- C++
+### C++
 ```
 std::map<int, std::vector<std::string>> _roster;
 _roster[grade]    // will create item automatically
@@ -68,7 +82,7 @@ _roster[grade]    // will create item automatically
   return _roster.at(grade);
 ```
 ## Iteration
-- C++
+### C++
 ```
 #include <iostream>
 #include <unordered_map>
@@ -102,7 +116,7 @@ mymap['c'] = 300;
 for (std::map<char,int>::iterator it=mymap.begin(); it!=mymap.end(); ++it)
   std::cout << it->first << " => " << it->second << '\n';
 ```
-- Java
+### Java
 Using map.keySet(), map.values(), map.entrySet()
 
 ```
@@ -126,17 +140,17 @@ Using map.keySet(), map.values(), map.entrySet()
   }
   
 ```
-- C#
+### C#
 ```
   
 ```
 
-- Python
+### Python
 ```
   for k, v in thisdict.items():
     print(k, v)
 ```
-- Go
+### Go
 ```
   var employee = map[string]int{
       "Mark": 10, "Sandy": 20,
@@ -195,7 +209,7 @@ Using map.keySet(), map.values(), map.entrySet()
 
 
 ## Exist or not
-- Java
+### Java
 ```
   Map<Integer, Integer> map = new HashMap<>();
   if (map.containsKey(nums[i])) {
@@ -204,12 +218,12 @@ Using map.keySet(), map.values(), map.entrySet()
   if(map.containsValue(3)) {
   }
 ```
-- C#
+### C#
 ```
   
 ```
 
-- Python
+### Python
 ```
 thisdict =	{
   "brand": "Ford",
@@ -220,7 +234,7 @@ thisdict =	{
 if "model" in thisdict:
   print("Yes")
 ```
-- JavaScript
+### JavaScript
 
 
 
