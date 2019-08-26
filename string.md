@@ -49,19 +49,22 @@ return std::format("{:02}:{:02}", m_hours, m_minutes);
 ```
 ### Go
 ```
+  fmt.Sprintf("One for %s, one for me.", name)
 ```
 
-- JavaScript
+### JavaScript
 ```
+  var str = `One for ${name}, one for me.`;
+
 ```
-- TypeScript
+### TypeScript
 ```
 ```
 
 ## String length  
 [Back](#string-operations)
 
-- C++
+### C++
 
 string.length() returns the length of the string, in terms of bytes.
 
@@ -73,31 +76,31 @@ Both string::size and string::length are synonyms and return the same value. (ht
   str.size();
 ```
 
-- Java
+### Java
 ```
  String s = "Hello Java String Method";
  int length = s.length();
 ```
 
-- C#
+### C#
 ```  
 string str = "abcdefg";
 int len = str.Length;      
 ```
 
-- Python
+### Python
 ```
 string = "Hello" 
 length = len(string) 
 ```
 
-- JavaScript
+### JavaScript
 ```
 const str = "Hello World!";
 const n = str.length;
 ```
 
-- TypeScript
+### TypeScript
 ```
 var str: string = "Hello World"; 
 console.log("Length "+uname.length)
@@ -106,7 +109,7 @@ console.log("Length "+uname.length)
 ## Iterat charactors in string
 [Back](#string-operations)
 
-- C++
+### C++
 Using iterator
 ```
 for (auto it = a.begin(); it != a.end(); ++it)
@@ -133,33 +136,33 @@ for (const char c : sequence)
 }  
 ```
 
-- Java
+### Java
 ```
 ```
 
-- C#
+### C#
 ```
 ```
 
-- Python
+### Python
 ```
   DNA_TO_RNA_MAP = {'G': 'C', 'C': 'G', 'T': 'A', 'A': 'U'}
   return ''.join(DNA_TO_RNA_MAP[c] for c in dna_strand)
 ```
 
-- JavaScript
+### JavaScript
 ```
 ```
 ## Sort chars in string
 [Back](#string-operations)
 
-- Java
+### Java
 ```
   char tempArray[] = inputString.toCharArray(); 
   Arrays.sort(tempArray); 
   return new String(tempArray); 
 ```
-- C#
+### C#
 ```  
   sortedWord = baseWord.OrderBy(c => c).ToString();
 ```
@@ -168,13 +171,13 @@ for (const char c : sequence)
   Array.Sort(a);
   sorted = new string(a);
 ```
-- Python
+### Python
 ```
   a = 'ZENOVW'
   b = sorted(a) # sorted() returns a list ['E', 'N', 'O', 'V', 'W', 'Z'] 
   c = ''.join(b)   # c is 'ENOVWZ'
 ```
-- JavaScript
+### JavaScript
 ```
   var str='ACBacb';
   str.split('').sort().join('');    // get 'ABCabc'
@@ -196,25 +199,25 @@ for (const char c : sequence)
 ## Access the characters in the string
 [Back](#string-operations)
 
-- Java
+### Java
 ```
   String str = "Hello";
   char c = s.charAt(0)
 ```
-- C#
+### C#
 ```
   string str = "Hello";
   char first = str[0];
        
 ```
 
-- Python
+### Python
 ```
   str = "Hello"
   first = str[0]      // first is a string not char
 ```
 
-- JavaScript
+### JavaScript
 JS has only 'string' type no 'char' type. A single character like 'a' is still a string in JS.
 ```
   let str = "Hello";
@@ -226,25 +229,25 @@ JS has only 'string' type no 'char' type. A single character like 'a' is still a
 ## Iterate over the characters in the string
 [Back](#string-operations)
 
-- Java
+### Java
 ```
   for (char c : s.toCharArray()) {
            
   }
 ```
-- C#
+### C#
 ```
   
 ```
 
-- Python
+### Python
 
-- JavaScript
+### JavaScript
 
 ## Reverse
 [Back](#string-operations)
 
-- C++
+### C++
 ```
   std::string s= input;
   reverse(s.begin(), s.end());
@@ -254,11 +257,11 @@ Better one using reverse_iterator
 ```
   return std::string(input.rbegin(), input.rend());;
 ```
-- Java
+### Java
 ```
 
 ```
-- C#
+### C#
 
 Using Array.Reverse
 ```  
@@ -272,12 +275,12 @@ Uing Linq
   return new string(input.Reverse().ToArray());
 ```
 
-- Python
+### Python
 ```
   reverse = string[::-1] 
   reverse = "".join(reversed(string)) 
 ```
-- JavaScript
+### JavaScript
 Using reverse() method for array
 ```
   str.split("").reverse().join("");
@@ -290,7 +293,7 @@ Using spread syntax (ES6) + reverse()
 ## Sub string
 [Back](#string-operations)
 
-- Java
+### Java
 ```
   String s="hello";  
   
@@ -298,13 +301,13 @@ Using spread syntax (ES6) + reverse()
 
   System.out.println(s.substring(0,2));  //he  [startIndex, endIndex)
 ```
-- C#
+### C#
 ```
   string s3 = "Visual C# Express";
   string sub = s3.Substring(7, 2);   // startIndex, length
 ```
 
-- Python
+### Python
 ```
   str = "Hello"
   # slicing string    
@@ -312,7 +315,7 @@ Using spread syntax (ES6) + reverse()
   sub2 = str[7:]
   
 ```
-- JavaScript
+### JavaScript
 ```
   var str = "Hello world!";
   var res = str.substring(1, 4);   // [startIndex, endIndex)
@@ -321,11 +324,11 @@ Using spread syntax (ES6) + reverse()
 ## String <-> Char array
 [Back](#string-operations)
 
-- C++
+### C++
 ```
   N/A
 ```
-- Java
+### Java
 ```
   String s = "Hello";
   char[] chars = s.toCharray();
@@ -333,13 +336,13 @@ Using spread syntax (ES6) + reverse()
            
   }
 ```
-- C#
+### C#
 ```
   char[] letters = { 'A', 'B', 'C' };
   string alphabet = new string(letters);
 ```
 
-- Python
+### Python
 ```
   str = "Hello"
   # slicing string
@@ -347,29 +350,29 @@ Using spread syntax (ES6) + reverse()
   sub2 = str[7:]
   
 ```
-- JavaScript
+### JavaScript
 
 
 
 ## Template literals
 [Back](#string-operations)
-- C++
+### C++
 ```
 ```
-- Java
+### Java
 ```
 
 ```
-- C#
+### C#
 ```
   return $"One for {input ?? "you"}, one for me.";
 ```
 
-- Python
+### Python
 ```
 
 ```
-- JavaScript
+### JavaScript
 ```
   return `One for ${name ? name : 'you'}, one for me.`;
 ```
@@ -377,36 +380,36 @@ Using spread syntax (ES6) + reverse()
 ## Char <-> int
 [Back](#string-operations)
 
-- Java
+### Java
 ```
-  numbers[secret.charAt(i) - '0']
+  numbers[secret.charAt(i) ### '0']
 ```
-- C#
-```
-
+### C#
 ```
 
-- Python
+```
+
+### Python
 Python has only 'string' type no 'char' type. A single character like 'a' is still a string in Python.
 ```
   char = chr(97)
   i = ord('a')
 ```
 
-- JavaScript
+### JavaScript
 JS has only 'string' type no 'char' type. A single character like 'a' is still a string in JS.
 ```
 "ABC".charCodeAt(0) 
-numbers[secret.charCodeAt(i) - '0'.charCodeAt(0)]
+numbers[secret.charCodeAt(i) ### '0'.charCodeAt(0)]
 ```
 
 ## Upper case vs lower case
 [Back](#string-operations)
-- C++
+### C++
 ```
-// Upper case A - Z, 65 - 90
-// Lower case a - z, 97 - 122
-// a - A = 32
+// Upper case A ### Z, 65 ### 90
+// Lower case a ### z, 97 ### 122
+// a ### A = 32
 
 a = A ^ (1<<5)
 A = a ^ (1<<5)
@@ -414,7 +417,7 @@ A = a ^ (1<<5)
 
 ## isPangram Sample
 
-- Java
+### Java
 ```
 public boolean isPangram(String input) {
     if (input == null || input.length() < 26) {
@@ -423,7 +426,7 @@ public boolean isPangram(String input) {
     boolean[] used = new boolean[26];
     for (char c : input.toCharArray()) {
         if(Character.isLetter(c))
-            used[Character.toLowerCase(c) - 'a'] = true;
+            used[Character.toLowerCase(c) ### 'a'] = true;
     }
 
     for (int i = 0; i < 26; i++) {
@@ -433,7 +436,7 @@ public boolean isPangram(String input) {
     return true;
 }
 ```
-- C#
+### C#
 ```
 public static bool IsPangram(string input)
 {
@@ -443,7 +446,7 @@ public static bool IsPangram(string input)
   {
     if (Char.IsLetter(input[i]))
     {
-      int pos = input[i] - 'a';
+      int pos = input[i] ### 'a';
       letters[pos]++;
     }
   }
@@ -456,21 +459,21 @@ public static bool IsPangram(string input)
   return true;
 }
 ```
-- Python
+### Python
 ```
   def is_pangram(sentence):
     used = [0] * 26
     sentence = sentence.lower()
     for char in sentence:
         if 'a' <= char <= 'z':   # is letter
-            index = ord(char) - ord('a')
+            index = ord(char) ### ord('a')
             used[index] += 1
     return all(lookup)
 ```
 
 ## Trim 
 [Back](#string-operations)
-- C++
+### C++
 ```
   const std::string WHITESPACE = " \n\r\t\f\v";
 
@@ -507,7 +510,7 @@ public static bool IsPangram(string input)
   }
 ```
 
-- Java
+### Java
 ```
 // trims the trailing and leading spaces  
 String s = " geeks for geeks has all java functions to read  ";  
@@ -530,31 +533,31 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
 ```
 
 
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
 
 ```
-- Go
+### Go
 ```
 ```
 
-- JavaScript
+### JavaScript
 ```
 
 ```
 
-- TypeScript
+### TypeScript
 ```
 ```
 
 ## Strip
 [Back](#string-operations)
 
-- C++
+### C++
 ```
   #include <algorithm>
   #include <string>
@@ -562,7 +565,7 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
   auto itor = remove(str.begin(), str.end(), 'e');
   str.erase(itor, str.end());
 ```
-- C
+### C
 ```
 void removeSpaces(char *str) 
 { 
@@ -575,7 +578,7 @@ void removeSpaces(char *str)
 } 
 ```  
 
-- Java
+### Java
 Using regex replace
 ```
 static String removeSpace(String str) 
@@ -585,7 +588,7 @@ static String removeSpace(String str)
 } 
 ```
 
-- C#
+### C#
 ```  
 static String removeSpace(String str)  
 {  
@@ -593,21 +596,21 @@ static String removeSpace(String str)
     return str;  
 }  
 ```
-- Python
+### Python
 ```
 def removeSpaces(string): 
     string = string.replace(' ','') 
     return string 
 ```
-- Go
+### Go
 ```
 ```
 
-- JavaScript
+### JavaScript
 ```
 
 ```
 
-- TypeScript
+### TypeScript
 ```
 ```
