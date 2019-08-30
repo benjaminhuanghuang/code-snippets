@@ -7,7 +7,8 @@
 - Modify(insert, append, delete, change charactor)
 - Convert with number
 - [Trim](#trim)
-- stripped
+- [Strip](#strip)
+- [Split](#split)
 
 ## String format
 [Back](#string-operations)
@@ -613,4 +614,17 @@ def removeSpaces(string):
 
 ### TypeScript
 ```
+```
+
+## Split
+[Back](#string-operations)
+### C++
+C++没有split()函数，一个可以替换的方案是使用stringstream类，该类会模拟字符串读入操作，即实现字符串按空格分割。
+```
+  stringstream ss(text);
+  string word;
+  while (ss >> word)
+  {
+      ans.push_back(w3);
+  }
 ```
