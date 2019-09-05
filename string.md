@@ -1,5 +1,5 @@
 # String Operations
-- [String format](#string-length)
+- [String format](#string-format)
 - [String length](#string-length)
 - Iteration
 - Sort
@@ -10,8 +10,10 @@
 - [Strip](#strip)
 - [Split](#split)
 
+
 ## String format
 [Back](#string-operations)
+
 ### C++
 Using stringstream
 ```
@@ -21,32 +23,38 @@ Using stringstream
       << std::setfill('0') << m_minutes;
   return ret.str();
 ```
-Using printf
+Using char[] and sprintf
 ```
-#include <cstdio>
+  #include <cstdio>
 
-char buffer[6];
-std::sprintf(buffer, "%02d:%02d", m_hours, m_minutes);
-return buffer;
+  char buffer[6];
+  std::sprintf(buffer, "%02d:%02d", m_hours, m_minutes);
+  return buffer;
 ```
 
 Using fmt library in C++ 20
 ```
-return std::format("{:02}:{:02}", m_hours, m_minutes);
+  return std::format("{:02}:{:02}", m_hours, m_minutes);
 ```
 ### Java
 ```
-
+  String gfg1 = String.format("My Company name is %s", str); 
 ```
-
 
 ### C#
 ```  
-
+  string s = String.Format("At {0}, the temperature is {1}°C.", DateTime.Now, 20.4);
 ```
 ### Python
 ```
+  name = "John"
+  age = 23
+  print("%s is %d years old." % (name, age))
 
+```
+
+```
+  print ("This is {} {} {} {}".format("one", "two", "three", "four")) 
 ```
 ### Go
 ```
@@ -60,6 +68,7 @@ return std::format("{:02}:{:02}", m_hours, m_minutes);
 ```
 ### TypeScript
 ```
+  var str = `One for ${name}, one for me.`;
 ```
 
 ## String length  
@@ -104,7 +113,7 @@ const n = str.length;
 ### TypeScript
 ```
 var str: string = "Hello World"; 
-console.log("Length "+uname.length)
+console.log("Length " + uname.length)
 ```
 
 ## Iterat charactors in string
