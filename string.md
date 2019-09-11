@@ -553,6 +553,19 @@ System.out.println(StringUtils.stripEnd("//test/me", "/"));
 ```
 ### Go
 ```
+  trimmed := strings.TrimSpace(input)
+  trimmed := strings.Trim(remark, " \t\n\r")
+
+  func Trim(s string, cutset string) string
+  func TrimFunc(s string, f func(rune) bool) string
+  func TrimLeft(s string, cutset string) string
+  func TrimLeftFunc(s string, f func(rune) bool) string
+  func TrimPrefix(s, prefix string) string
+  func TrimRight(s string, cutset string) string
+  func TrimRightFunc(s string, f func(rune) bool) string
+  func TrimSpace(s string) string
+  func TrimSuffix(s, suffix string) string
+
 ```
 
 ### JavaScript
