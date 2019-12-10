@@ -1,21 +1,27 @@
+#  Numbers
+
+
 ## Min and Max of numbers
-- C++
+### C++
 ```
   #include <climits>
+
   std::cout<<"maximum value of int: "<<INT_MAX<<'\n';
 	std::cout<<"minimum value of int: "<<INT_MIN<<'\n';
 ```
-- Java
+
+### Java
 ```
 int min = Integer.MIN_VALUE;
 int max = Integer.MAX_VALUE;
 ```
-- C#
+
+### C#
 ```  
 int min = int.MinValue;
 int max = int.MaxValue;
 ```
-- Python
+### Python
 ```
 min = -2^(n-1) 
 max = 2^(n-1) - 1.
@@ -25,7 +31,7 @@ max = 2^(n-1) - 1.
 >>> sys.maxint
 min =  -sys.maxint - 1
 ```
-- JavaScript
+### JavaScript
 // JavaScript use float numbers
 ```
 var max = Number.MAX_VALUE;
@@ -36,15 +42,17 @@ var min = Number.MIN_VALUE;
 
 
 
-## Convert string to number
+## String to number
 - Java
 ```
   int num = Integer.parseInt(t)
 ```
+
 - C#
 ```  
   int x = Convert.ToInt32(TextBoxD1.Text)
 ```
+
 - Python
 ```
   str_a = '50'
@@ -69,26 +77,23 @@ var min = Number.MIN_VALUE;
 
 ```
 
-
-
-
 ## Number to string
-- Java
+### Java
 ```
   String s = 100 + "";
 ```
-- C#
+### C#
 ```  
   String s = var.toString();
 ```
-- Python
+### Python
 ```
   a = 50.85
   str_a = str(a)
 
   '{:06.2f}'.format(3.141592653589793)
 ```
-- JavaScript
+### JavaScript
 ```
   // using different bases
   var num = 15;
@@ -97,3 +102,4 @@ var min = Number.MIN_VALUE;
   var c = num.toString(8);
   var d = num.toString(16);
 ```
+

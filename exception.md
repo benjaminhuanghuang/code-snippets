@@ -1,36 +1,37 @@
 
 ## Reference
--[Python Exception hierarchy](https://docs.python.org/2/library/exceptions.html)
+###[Python Exception hierarchy](https://docs.python.org/2/library/exceptions.html)
 
 ## Throw Exception
-- C++
+### C++
 ```
     #include <stdexcept>
 
     throw std::invalid_argument("Invalid input.");
-    throw std:: domain_error( "error" );
+    throw std::domain_error( "error" );
 ```
-- Java
+
+### Java
 ```
   throw new IOException("Client not initialized");
 ```
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
     if length < 2:
         raise ValueError('could not find %c in %s' % (ch,str))
 ```
-- JavaScript
+### JavaScript
 ```
     throw "Too big";    // throw a text
     throw 500;          // throw a number
 ```
 
 ## Catch Exception
-- Java
+### Java
 ```
   try {
       
@@ -39,7 +40,7 @@
       logger.log();
   }
 ```
-- C#
+### C#
 ```  
   try
   {
@@ -50,7 +51,7 @@
       throw ex;
   }
 ```
-- Python
+### Python
 ```
     try:
         data = something_that_can_go_wrong
@@ -62,7 +63,7 @@
         doing_different_exception_handling
 
 ```
-- JavaScript
+### JavaScript
 ```
     try {
         Block of code to try

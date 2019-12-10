@@ -15,7 +15,7 @@
   // alias
   typedef std::map<char, int> nucle_map;
 ```
-###### Java
+### Java
 ```
 
 ```
@@ -30,6 +30,7 @@
 
 ```
 ### JavaScript
+Method 1
 ```
 var first = new Map([
   [1, 'one'],
@@ -37,6 +38,7 @@ var first = new Map([
   [3, 'three'],
 ]);
 ```
+
 Method 2
 ```
 var myMap = new Map();

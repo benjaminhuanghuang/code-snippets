@@ -1,26 +1,27 @@
-# Dynamic array
+# Dynamic array or list
 
 ## Init
-- C++
+### C++
 ```
   vector<int> nums {2, 7, 11, 15};
 
   vector<int> nums = {2, 7, 11, 15};   // create a std::initializer_list<int>
+  
   // fill 
   vector<int> s(n+1, 0);
 ```
 
-- Java
+### Java
 ```
   ArrayList<T>
 ```
-- C#
+### C#
 ```
   List<T>
 ```
 
-- Python
-Python does not have built-in support for Arrays, but Python lists can be used instead.
+### Python
+Python does not have built###in support for Arrays, but Python lists can be used instead.
 ```
   chars = ["a", "b", "c"]
 
@@ -31,21 +32,23 @@ Python does not have built-in support for Arrays, but Python lists can be used i
   seq_list = [[] for _ in range(n)]
 
 ```
-- JavaScript
+### JavaScript
 ```
   var cars = ["Saab", "Volvo", "BMW"];
 
   let newArr = new Array(10).fill(null);    
 ```
-- TypeScript
+
+### TypeScript
 ```
   var cars = ["Saab", "Volvo", "BMW"];
 
   let newArr = new Array(10).fill(null);    
 ```
+
 ## Iteration
 
-- JavaScript
+### JavaScript
 ```
 for (let element of array) {
 {}
@@ -54,7 +57,7 @@ for (let element in array) {
 {}
 ```
 
-- Python
+### Python
 ```
 tickers = [1, 2, 3]
 for i, ticker in enumerate(tickers):
@@ -62,42 +65,42 @@ for i, ticker in enumerate(tickers):
 ```
 
 ## Add, delete, modify
-- Java
+### Java
 ```
   
 ```
-- C#
+### C#
 ```
   
 ```
 
-- Python
+### Python
 ```
 ```
-- JavaScript
+### JavaScript
 ```
 ```
 
 ## Merge two arrays 
-- Java
+### Java
 ```
 
 ```
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
   letters = []
   nums = []
   all = [letter[1] + " " + letter[0] for letter in letters] + nums
 ```
-- JavaScript
+### JavaScript
 ```
 ```
 ## Merge two lists 
-- Java
+### Java
 ```
   List<String> listA = new ArrayList<String>();
   listA.add("A");
@@ -121,30 +124,30 @@ or
 	List<String> listFinal = ListUtils.union(listA, listB);
 ```
 
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
   letters = []
   nums = []
   all = [letter[1] + " " + letter[0] for letter in letters] + nums
 ```
-- JavaScript
+### JavaScript
 ```
 ```
 
 
 ## Clone
-- Java
+### Java
 ```
   ArrayList newList = new ArrayList<>(oldList);
 
   char[] temp = Arrays.copyOf(this.map, this.map.length); 
 ```
 
-- C#
+### C#
 ```  
   List<int> newList = new List<int>(oldList));
 
@@ -152,31 +155,31 @@ or
   Array.Copy(this.Map, temp, this.charMap.Length);
 
 ```
-- Python
+### Python
 ```
   newList = list(oldList)
 ```
-- JavaScript
+### JavaScript
 ```
   let newList = [...oldList];
 ```
 
 
 ## Check elements in array
-- Java
+### Java
 ```
   Boolean[] items = ...;
   List<Boolean> itemsList = Arrays.asList(items);
-  if (itemsList.stream().allMatch(e -> e)) {
+  if (itemsList.stream().allMatch(e ###> e)) {
       // all
   }
-  if (itemsList.stream().anyMatch(e -> e)) {
+  if (itemsList.stream().anyMatch(e ###> e)) {
       // any
   }
   
 ```
 
-- C#
+### C#
 ```  
   class Pet
   {
@@ -193,7 +196,7 @@ or
 
 
 ```
-- Python
+### Python
 ```
   lookup = [0] * 26
   # all() function checks and returns True only if all the elements in the 
@@ -204,7 +207,7 @@ or
   # The any() method returns True if any element of an iterable is True. If not, any() returns False.
   any(lookup)
 ```
-- JavaScript
+### JavaScript
 ```
   // The every() method tests whether all elements in the array pass the test implemented by the provided function.
   function isBelowThreshold(currentValue) {
