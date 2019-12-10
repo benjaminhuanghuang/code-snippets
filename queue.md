@@ -1,5 +1,6 @@
 ## Queue
-- Java
+### C++
+### Java
 LinkedList implemented the Queue interface
 ```
 LinkedList<Integer> ids = new LinkedList<>();
@@ -16,11 +17,11 @@ while(!ids.isEmpty())
 }
 
 ```
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 https://dbader.org/blog/queues-in-python
 
 list Built-in
@@ -61,6 +62,6 @@ for i in range(5):
 while not q.empty():
     print q.get()
 ```    
-- JavaScript
+### JavaScript
 ```
 ```
