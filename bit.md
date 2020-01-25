@@ -1,3 +1,6 @@
+## Odd or Even
+n & 1
+
 ## count of 1
 - Java
 ```

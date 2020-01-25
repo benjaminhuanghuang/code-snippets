@@ -2,6 +2,8 @@
 
 ## Init
 ### C++
+https://stackoverflow.com/questions/23414302/c-vector-initial-capacity
+The C++ standard doesn't give any guarantee about the capacity of a default-constructed vector
 ```
   vector<int> nums {2, 7, 11, 15};
 
