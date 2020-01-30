@@ -155,7 +155,11 @@ language operator sizeof() returns the size in bytes
 [Back](#array)
 ### C++
 ```
+  std::vector<int> v = {0, 1, 2, 3, 4, 5};
+ 
+  for (const int& i : v) {
 
+  }
 ```
 ### C
 ```
@@ -181,10 +185,22 @@ language operator sizeof() returns the size in bytes
 ```
 ### Go
 ```
+  for _, v := range list {
+
+  }
 ```
 
 ### JavaScript
 ```
+  for (let v in nums){
+
+  }
+
+
+  for (let v of nums){
+
+  }
+
 ```
 ### TypeScript
 ```
