@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 
 List.propTypes = {
-  list: PropTypes.array.isRequired,
+  list: PropTypes.array.isRequired,         // array
+  name: PropTypes.string.isRequired,        // string
+  onClick: PropTypes.func.isRequired        // function
 };
 
 
