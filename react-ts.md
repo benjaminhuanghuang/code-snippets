@@ -1,7 +1,6 @@
 # React + Typescript
 
 
-## Funcation component
-
+## Functional component
 
 ## Class component

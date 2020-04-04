@@ -95,3 +95,60 @@ getTime() returns the number of milliseconds between midnight of January 1, 1970
 ### TypeScript
 ```
 ```
+
+## Get Week day
+
+
+
+### C++
+```
+
+```
+### C
+```
+
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+### Python
+```
+
+```
+### Go
+```
+```
+
+### JavaScript
+```
+/*
+    Cut the hour, minute, second, millisecond from timestamp
+*/
+export function h0(timestamp = Date.now()) {
+    const target = new Date(timestamp);
+
+    target.setHours(0);
+    target.setMinutes(0);
+    target.setSeconds(0);
+    target.setMilliseconds(0);
+
+    return target.getTime();
+}
+const theDay = h0(theTime);
+const isToday = theDay === h0();
+
+const weekString =
+  "周" +
+  ["日", "一", "二", "三", "四", "五", "六"][theDay.getDay()] +
+  (isToday ? "(今天)" : "");
+```
+### TypeScript
+```
+```    

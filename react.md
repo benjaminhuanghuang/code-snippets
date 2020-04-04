@@ -1,9 +1,15 @@
+## Functional component
+
+## Class component
+
+
 ## Type checking
 ```
 import PropTypes from 'prop-types';
 
-
+// lower case! propTypes
 List.propTypes = {
+  time: PropTypes.number.isRequired         // number
   list: PropTypes.array.isRequired,         // array
   name: PropTypes.string.isRequired,        // string
   onClick: PropTypes.func.isRequired        // function
