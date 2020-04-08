@@ -50,9 +50,39 @@
 
 
 ### C#
+- Use Int32.ToString()
 ```  
-
+  int val = 4;
+  string msg = val.ToString();
 ```
+
+- Use string concatenation
+```
+  int numOfApples = 16;
+  string msg = "There are " + numOfApples + " apples";
+```
+
+- Use StringBuilder
+```
+  int val = 4;
+  
+  var builder = new StringBuilder();
+
+  builder.Append("There are ");
+  builder.Append(val).ToString();
+  builder.Append(" hawks");
+
+  Console.WriteLine(builder);
+```
+
+- Use string Format
+```
+int val = 4;
+
+string msg2 = string.Format("There are {0} hawks", val);
+string msg3 = $"There are {val} hawks";
+```
+
 ### Python
 ```
   text = str(12)

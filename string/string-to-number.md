@@ -1,100 +1,103 @@
-## Number to string
+## String to number
 ### C++
+- Use stoi() from C++ 11
+stoi() works for both C++ strings and C style strings
 ```
   #include <string>
 
-  string s = std::to_string(12345);
+  string str1 = "45"; 
+  string str2 = "3.14159"; 
+  string str3 = "31337 geek"; 
+
+  int myint1 = stoi(str1); 
+  int myint2 = stoi(str2); 
+  int myint3 = stoi(str3);
 ```
+- Use atoi() legacy C-style function
+atoi() works only for C-style strings (character array and string literal)
+```
+  #include <cstdlib> 
+
+  const char *str1 = "42"; 
+  const char *str2 = "3.14159"; 
+  const char *str3 = "31337 geek"; 
+    
+  int num1 = atoi(str1); 
+  int num2 = atoi(str2); 
+  int num3 = atoi(str3); 
+```
+
 ### C
-Use C standard library strtol (avoid atoi() which does not report errors).
+- Use atoi() legacy C-style function
+atoi() works only for C-style strings (character array and string literal)
 ```
-  int number = (int)std::strtol(text.c_str(), nullptr, 10);
+  #include <cstdlib> 
+
+  const char *str1 = "42"; 
+  const char *str2 = "3.14159"; 
+  const char *str3 = "31337 geek"; 
+    
+  int num1 = atoi(str1); 
+  int num2 = atoi(str2); 
+  int num3 = atoi(str3); 
 ```
-Using std::stoi() 
-```
-  std::string str("123");
-  try {
-    int n = std::stoi(str);
-    std::cout << n << "\n";
-  }
-  catch (...) {
-    std::cerr << "ERROR!\n";
-  }
-```
+
 ### Go
+- Use strconv
 ```
+  b, err := strconv.ParseBool("true")
+  f, err := strconv.ParseFloat("3.1415", 64)
+  i, err := strconv.ParseInt("-42", 10, 64)   // 64 is bitSize
+  u, err := strconv.ParseUint("42", 10, 64)
 ```
 ### Java
+- Integer.parseInt(), returns a primitive int
+```
+String number = "10";
+	int result = Integer.parseInt(number);			
+	System.out.println(result);
 ```
 
+- Integer.valueOf()  returns a new Integer() object.
 ```
-
+  String number = "10";
+	Integer result = Integer.valueOf(number);		
+	System.out.println(result);
+```
 
 ### C#
 ```  
 
 ```
 ### Python
+- Use int(), float()
 ```
-  text = str(12)
+  num = int("10")
+  num = int("0x12F")        # Error
+  num = int("0x12F", base=16)
+
+  f = float('10.5674')
 ```
 
 ### JavaScript
-Using method num.toString(base)
+- parseInt(str, base), parseFloat()
 ```
-  const num = 213; 
-  const text = num.toString(16));
+  var text = '42px';
+  var integer = parseInt(text, 10);  // 42
+
+  var text = '3.14someRandomStuff';
+  var pointNum = parseFloat(text);  // 3.14
 ```
+
+- Number()
+```
+  Number('123'); // returns 123
+  Number('12.3'); // returns 12.3
+  Number('3.14someRandomStuff'); // returns NaN
+  Number('42px'); // returns NaN
+```
+
 ### TypeScript
 ```
 ```
 
-## String to Number
-### C++
-
-
-### C
-```
-
-```
-
-### Go
-```
-```
-### Java
-```
-
-```
-
-
-### C#
-```  
-
-```
-### Python
-Uing reverse iteration with the reversed()function 
-```
-str = "Python" 
-reversedstring =''.join(reversed(str))
-```
-
-Using slicing
-create a slice that starts with the length of the string, and ends at index 0.
-```
-str = "Python" 
-stringlength = len(str)
-slicedString = str[stringlength::-1] 
-```
-Or
-```
-str = "Python" 
-slicedString = str[::-1] 
-```
-
-
-### JavaScript
-```
-```
-### TypeScript
-```
-```
