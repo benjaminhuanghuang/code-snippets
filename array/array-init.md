@@ -30,6 +30,7 @@
     std::reverse_copy(a2.begin(), a2.end(), std::ostream_iterator<int>(std::cout, " "));
 
 ```
+
 ### C
 ```
 int num[5] = {1, 1, 1, 1, 1};
@@ -61,6 +62,16 @@ for i := 0; i < 2; i++ {
     }
 }
 ```
+- make grid
+```
+n, m := len(grid), len(grid[0])
+
+res := make([][]int, n)
+for i := 0; i < n; i++ {
+  res[i] = make([]int, m)
+}
+```
+
 ### Java
 - new array and Arrays.fill
 ```
@@ -84,8 +95,14 @@ Python does not have built-in support for Arrays, but Python lists can be used i
   dp = [0 for _ in range(amount + 1)]   
 
   seq_list = [[] for _ in range(n)]
-
 ```
+
+- Use *
+```
+n, m = len(grid), len(grid[0])
+res = [[0] * m for _ in range(n)]
+```
+
 - JavaScript
 ```
   var cars = ["Saab", "Volvo", "BMW"];
@@ -102,4 +119,13 @@ Python does not have built-in support for Arrays, but Python lists can be used i
 
   console.log(array1.fill(6));
   // expected output: [6, 6, 6, 6]  
+```
+- 
+- 2D, new Array
+```
+let n = grid.length, m = grid[0].length;
+let res = new Array(n);
+for (let i = 0; i < n; i++) {
+    res[i] = new Array(m);
+}
 ```

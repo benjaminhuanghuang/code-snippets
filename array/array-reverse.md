@@ -1,14 +1,10 @@
-# Array sort
+# Array Reverse
 ### C++
-Use std::sort() and lambda function
+- Use std::reverse()
 ```
-  std::sort(intervals.begin(), intervals.end(),
-    [](const vector<int> &a, const vector<int> &b) {
-      return a[0] < b[0];
-  });
-
-
+  std::reverse(vec.begin(), vec.end());
 ```
+
 ### C
 ```
 
