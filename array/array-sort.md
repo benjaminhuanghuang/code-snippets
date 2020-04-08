@@ -18,6 +18,19 @@ use Arrays.sort() and Comparator<T>
 ```
   
 ```
+Use Collections.sort()
+Collections.reverseOrder() to sort a list in descending order.
+```
+  // Create a list of Integers 
+  ArrayList<Integer> al = new ArrayList<Integer>(); 
+  al.add(30); 
+  al.add(20); 
+  al.add(10); 
+  al.add(40); 
+  al.add(50); 
+
+  Collections.sort(al, Collections.reverseOrder());
+```
 ### C#
 ```  
   Array.Sort(nums);

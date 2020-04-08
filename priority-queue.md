@@ -8,7 +8,25 @@ import java.util.PriorityQueue;
 
 PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
+// add()插入失败时抛出异常，offer()插入失败会返回false
+minHeap.offer(number);
+
+// remove()获取并删除队首元素, 当方法失败时抛出异常, poll()失败时返回null
+minHeap.poll();
 ```
+
+Max Heap
+```
+// Collections.reverseOrder() to sort a list in descending order.
+PriorityQueue<Integer> queue = new PriorityQueue<>(10, Collections.reverseOrder());
+```
+
+Use Comparator
+```
+PriorityQueue<Student> pq = new PriorityQueue<Student>(5, new StudentComparator()); 
+```        
+
+
 ### C#
 ```  
 
