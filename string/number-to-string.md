@@ -1,12 +1,15 @@
 ## Number to string
-Use std::to_string() available in C++ standard library since C++11
 ### C++
+- Use C style
+
+- Use std::to_string() available in C++ standard library since C++11
 ```
   #include <string>
 
   string s = std::to_string(12345);
 ```
-Use C++ standard library std::stringstream.
+
+- Use C++ standard library std::stringstream.
 ```
   #include <sstream>
   #include <iostream>
@@ -21,23 +24,22 @@ Use C++ standard library std::stringstream.
     return 0;
   }
 ```
+
+- Using fmt library in C++ 20
+```
+  return std::format("{:02}:{:02}", m_hours, m_minutes);
+```
 ### C
-Use C standard library function snprintf().
+- Using char[] and std::sprintf or std::snprintf()
 ```
-#include <cstdio>
+  #include <cstdio>
 
-#define MAX_BUFFER_SIZE 128
+  #define MAX_BUFFER_SIZE 128
 
-int main()
-{
-  int number = 123;
-  char out_string [MAX_BUFFER_SIZE];
-  snprintf(out_string, MAX_BUFFER_SIZE, "%d", number);
+  char out_string[MAX_BUFFER_SIZE];
+  std::sprintf(buffer, "%02d", number);
   printf("out_string = \"%s\"\n", out_string);
-  return 0;
-}
 ```
-
 ### Go
 ```
 ```
@@ -54,6 +56,9 @@ int main()
 ### Python
 ```
   text = str(12)
+```
+```
+  print("{:.2f}".format(3.1415926));
 ```
 
 ### JavaScript
@@ -92,76 +97,3 @@ Concatenating an Empty String
 ```
 ```
 
-## Format number to string
-### C++
-
-## String format
-### C++
-Using stringstream
-```
-  std::stringstream ret;
-
-  ret << std::setw(2) << std::setfill('0') << m_hours << ":" << std::setw(2)
-      << std::setfill('0') << m_minutes;
-  return ret.str();
-```
-
-Using char[] and sprintf
-```
-  #include <cstdio>
-
-  char buffer[6];
-  std::sprintf(buffer, "%02d:%02d", m_hours, m_minutes);
-  return buffer;
-```
-
-Using fmt library in C++ 20
-```
-  return std::format("{:02}:{:02}", m_hours, m_minutes);
-```
-
-### C
-Use C standard library function snprintf().
-```
-#include <cstdio>
-
-#define MAX_BUFFER_SIZE 128
-
-int main()
-{
-  int number = 123;
-  char out_string [MAX_BUFFER_SIZE];
-  snprintf(out_string, MAX_BUFFER_SIZE, "%d", number);
-  printf("out_string = \"%s\"\n", out_string);
-  return 0;
-}
-
-```
-
-### Go
-```
-```
-### Java
-```
-
-```
-
-
-### C#
-```  
-
-```
-### Python
-```
-print("{:.2f}".format(3.1415926));
-
-```
-
-
-
-### JavaScript
-```
-```
-### TypeScript
-```
-```
