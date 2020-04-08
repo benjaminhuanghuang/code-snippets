@@ -1,41 +1,5 @@
 # String Operations
-- [String format](#string-format)
-- [String length](#string-length)
-- Iteration
-- Sort
-- Reverse
-- Modify(insert, append, delete, change charactor)
-- Convert with number
-- [Trim](#trim)
-- [Strip](#strip)
-- [Split](#split)
-
-
-## String format
-[Back](#string-operations)
-
-### C++
-Using stringstream
-```
-  std::stringstream ret;
-
-  ret << std::setw(2) << std::setfill('0') << m_hours << ":" << std::setw(2)
-      << std::setfill('0') << m_minutes;
-  return ret.str();
-```
-Using char[] and sprintf
-```
-  #include <cstdio>
-
-  char buffer[6];
-  std::sprintf(buffer, "%02d:%02d", m_hours, m_minutes);
-  return buffer;
-```
-
-Using fmt library in C++ 20
-```
-  return std::format("{:02}:{:02}", m_hours, m_minutes);
-```
+- [String format](#string-f
 ### Java
 ```
   String gfg1 = String.format("My Company name is %s", str); 
