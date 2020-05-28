@@ -1,8 +1,8 @@
 # Min and Max of numbers
-
+2 to the nth power
 ### C++
-INT_MAX = 2147483647
-INT_MAX = -2147483648
+INT_MAX = 2147483647  = 7FFFFFFF  = 2^31 - 1
+INT_MAX = -2147483648 = -80000000 = -2^31
 ```
   #include <climits>
 
@@ -28,8 +28,7 @@ int max = int.MaxValue;
 min = -2^(n-1) 
 max = 2^(n-1) - 1.
 
-# python 2
-
+- python 2
 >>> sys.maxint
 min =  -sys.maxint - 1
 ```
@@ -37,7 +36,7 @@ min =  -sys.maxint - 1
 ### JavaScript
 // JavaScript use float numbers
 ```
-var max = Number.MAX_VALUE;
+var max = Number.MAX_VALUE;     // 2^1024
 var min = Number.MIN_VALUE;
 ```
 
