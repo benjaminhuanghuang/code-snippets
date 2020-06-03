@@ -37,6 +37,7 @@ Or use getOrDefault（JDK 8）
 
 ```
 ### Python
+Create dict from words
 ```
 
 ```
@@ -46,11 +47,6 @@ Or use getOrDefault（JDK 8）
 ```
 ```
 ### TypeScript
-Use the Nullish Coalescing
 ```
-  const words: string[] = this.getWords(sentence);
-
-  for (let word of words) {
-      result.set(word, result.get(word)||0 + 1);   // Use the Nullish Coalescing
-  }
+  const expectedCounts = new Map(Object.entries({ one: 1, of: 1, each: 1 }))
 ```
