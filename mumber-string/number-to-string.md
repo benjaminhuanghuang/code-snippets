@@ -45,7 +45,7 @@
 ```
 ### Java
 ```
-
+  String s = 100 + "";
 ```
 
 
@@ -87,12 +87,20 @@ string msg3 = $"There are {val} hawks";
 ```
   text = str(12)
 ```
+
 ```
   print("{:.2f}".format(3.1415926));
 ```
 
 ### JavaScript
-Using method num.toString(base)
+- Concatenating an Empty String
+```
+  let a = '' + 50      // '50';
+
+  let a = '' + 281e-26 // '2.81e-24'
+```
+
+- Using method num.toString(base)
 ```
   const num = 213; 
   const text = num.toString(16));
@@ -101,7 +109,7 @@ Using method num.toString(base)
   (60).toString(); // '60'
   (7).toString(2); // '111' (7 in base 2, or binary)
 ```
-Using String() method
+- Using String() method
 ```
   let a = 30;
 
@@ -109,7 +117,7 @@ Using String() method
   String(24);    // '24'
   String(35.64); // '35.64'
 ```
-Using template strings in ES6
+- Using template strings in ES6
 ```
   let num = 50;
   let string = `${num}`;      // '50'
@@ -117,12 +125,7 @@ Using template strings in ES6
   let flt = 50.205;
   let floatString = `${flt}`; // '50.205'
 ```
-Concatenating an Empty String
-```
-  let a = '' + 50      // '50';
 
-  let a = '' + 281e-26 // '2.81e-24'
-```
 ### TypeScript
 ```
 ```

@@ -53,12 +53,12 @@ atoi() works only for C-style strings (character array and string literal)
 ### Java
 - Integer.parseInt(), returns a primitive int
 ```
-String number = "10";
+  String number = "10";
 	int result = Integer.parseInt(number);			
 	System.out.println(result);
 ```
 
-- Integer.valueOf()  returns a new Integer() object.
+- Integer.valueOf() returns a new Integer() object.
 ```
   String number = "10";
 	Integer result = Integer.valueOf(number);		
@@ -67,7 +67,7 @@ String number = "10";
 
 ### C#
 ```  
-
+  int x = Convert.ToInt32(TextBoxD1.Text)
 ```
 ### Python
 - Use int(), float()
@@ -80,7 +80,8 @@ String number = "10";
 ```
 
 ### JavaScript
-- parseInt(str, base), parseFloat()
+- Use parseInt(str, base), parseFloat()
+
 ```
   var text = '42px';
   var integer = parseInt(text, 10);  // 42
@@ -89,12 +90,12 @@ String number = "10";
   var pointNum = parseFloat(text);  // 3.14
 ```
 
-- Number()
+- Use Number(), Number is stricter than Number parseXXX()
 ```
   Number('123'); // returns 123
   Number('12.3'); // returns 12.3
-  Number('3.14someRandomStuff'); // returns NaN
-  Number('42px'); // returns NaN
+  Number('3.14someRandomStuff'); // returns NaN, Number is stricter than Number parseXXX()
+  Number('42px'); // returns NaN, Number is stricter than Number parseXXX()
 ```
 
 ### TypeScript
