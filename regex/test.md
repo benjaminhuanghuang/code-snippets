@@ -1,11 +1,11 @@
 ## Replace
 
-- C++
+### C++
 ```
 
 ```
 
-- Java
+### Java
 ```
 // trim leading
 System.out.println("//test/me".replaceAll("^/+", ""));
@@ -15,21 +15,26 @@ System.out.println("//test/me//".replaceAll("/+$", ""));
 ```
 
 
-- C#
+### C#
 ```  
 
 ```
-- Python
+### Python
 ```
 
 ```
-- Go
+### Go
 ```
 ```
 
-- JavaScript
+### JavaScript
+
+test() method returns true if it finds a match, otherwise it returns false
 ```
+  function validateDNA(dna) {
+    return (/^([A-Z]{3})+$/.test(dna));
+  }
 ```
-- TypeScript
+### TypeScript
 ```
 ```
