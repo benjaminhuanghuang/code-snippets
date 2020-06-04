@@ -1,21 +1,36 @@
+
 ### C++
+- Use reverse iterator 
+```
+  str = std::string(input.rbegin(), input.rend());;
 ```
 
-
-```
 ### C
-```
-
+- Use Array.Reverse()
+``` 
+  char[] arr = s.ToCharArray();
+  Array.Reverse(arr);
+  return new string(arr);
 ```
 
 ### Go
 ```
 ```
 ### Java
+- Use StringBuilder.reverse()
 ```
-
+    StringBuilder sb = new StringBuilder(str);  
+    sb.reverse();  
+    return sb.toString();  
 ```
-
+- Reverse a char array
+```
+  char ch[] = str.toCharArray();  
+  String rev = "";  
+  for(int i=ch.length-1;i>=0;i--){  
+      rev+=ch[i];  
+  }  
+```   
 
 ### C#
 ```  

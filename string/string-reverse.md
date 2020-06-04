@@ -1,4 +1,5 @@
-## String Revert
+## String Reverse
+
 ### C++
 Uing reverse iteration 
 ```
