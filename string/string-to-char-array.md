@@ -1,6 +1,33 @@
+### C++
+C++ and C can accss the char in string directly
+```
 
 
+```
+### C
+```
 
+```
+
+### Go
+```
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+
+### Python
+```
+str = '12345'
+chars = list(str)      # conver string to char list
+```
 
 ### JavaScript
 Here are 4 ways to split a word into an array of characters.
