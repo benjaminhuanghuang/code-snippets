@@ -46,7 +46,7 @@ Or use getOrDefault（JDK 8）
 ```
 ```
 ### TypeScript
-Use the Nullish Coalescing
+Use the Nullish Coalescing || 
 ```
   let result = new Map<string, number>();
 
