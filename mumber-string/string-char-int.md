@@ -1,4 +1,40 @@
-### String + Char + int
+# String + Char + int
+## Is number/digit
+### C++
+- Use isdigit() in <cctype>
+```
+  #include <cctype>
+  // isnumber() may be an Apple-specific C++ method
+
+  if (isdigit(c))
+  {
+    
+  }
+```
+### C
+```
+
+```
+
+### Go
+```
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+### Python
+```
+
+```
+
+
 
 ## Create an A to Z alphabet
 ### C++

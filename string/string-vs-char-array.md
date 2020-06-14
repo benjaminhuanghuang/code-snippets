@@ -1,3 +1,43 @@
+## Iteration 
+### C++
+- Uese range based for loop
+```
+  for (char c : encoded_str)
+  {
+
+  }
+```
+### C
+```
+
+```
+
+### Go
+```
+```
+### Java
+```
+
+```
+
+
+### C#
+```  
+
+```
+### Python
+```
+
+```
+
+
+### JavaScript
+```
+```
+### TypeScript
+```
+```
+
 ## String to Char array
 
 ### C++
