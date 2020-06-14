@@ -37,10 +37,15 @@ regex_search找到第一个就停止，不进行多次搜索。
 
 ### JavaScript
 
-test() method returns true if it finds a match, otherwise it returns false
+The match() method searches a string for a match against a regular expression, and returns the matches, as an Array object
+
+The g modifier is used to perform a global match (find all matches rather than stopping after the first match)
+
 ```
-  function validateDNA(dna) {
-    return (/^([A-Z]{3})+$/.test(dna));
+  // get all matches of regex with g modifier
+  const codons = rna.match(/[A-Z]{3}/g);
+  for (const codon of codons) {
+    ...
   }
 ```
 ### TypeScript

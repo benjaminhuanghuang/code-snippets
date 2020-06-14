@@ -11,11 +11,6 @@ regex_search找到第一个就停止，不进行多次搜索。
 
 ### Java
 ```
-// trim leading
-System.out.println("//test/me".replaceAll("^/+", ""));
-
-// trim trailing:
-System.out.println("//test/me//".replaceAll("/+$", ""));
 ```
 
 

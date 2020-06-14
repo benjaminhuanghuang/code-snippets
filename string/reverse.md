@@ -64,5 +64,5 @@ print("".join(chars))
   str.split('').reverse().join('');
 ```
 ### TypeScript
-Same as JavaScript
+Same as JavaScript 
 
