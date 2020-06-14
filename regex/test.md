@@ -31,9 +31,12 @@ regex_search找到第一个就停止，不进行多次搜索。
 test() method returns true if it finds a match, otherwise it returns false
 ```
   function validateDNA(dna) {
-    return (/^([A-Z]{3})+$/.test(dna));
+    const dnaPattern = /^([A-Z]{3})+$/;
+    return dnaPattern.test(dna);
   }
 ```
+
+
 ### TypeScript
 ```
 ```

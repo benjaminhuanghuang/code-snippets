@@ -43,7 +43,8 @@ The g modifier is used to perform a global match (find all matches rather than s
 
 ```
   // get all matches of regex with g modifier
-  const codons = rna.match(/[A-Z]{3}/g);
+  const rnaPattern = /[A-Z]{3}/g;
+  const codons = rnaStr.match(rnaPattern);
   for (const codon of codons) {
     ...
   }
