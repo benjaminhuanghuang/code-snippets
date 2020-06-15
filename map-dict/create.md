@@ -47,6 +47,17 @@ Create dict from words
 ```
 ```
 ### TypeScript
+- Use Object.entries
+
+The Object.entries() method returns an array of a given object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop. 
+
 ```
   const expectedCounts = new Map(Object.entries({ one: 1, of: 1, each: 1 }))
+```
+- Use []
+```
+  const codonProtein = new Map<string, string>([
+    ["AUG", "Methionine"],
+    ["UUU", "Phenylalanine"]
+  ]);
 ```
