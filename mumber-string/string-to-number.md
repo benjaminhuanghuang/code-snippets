@@ -90,12 +90,12 @@ atoi() works only for C-style strings (character array and string literal)
   var pointNum = parseFloat(text);  // 3.14
 ```
 
-- Use Number(), Number is stricter than Number parseXXX()
+- Use Number(), Number is stricter than parseXXX()
 ```
   Number('123'); // returns 123
   Number('12.3'); // returns 12.3
-  Number('3.14someRandomStuff'); // returns NaN, Number is stricter than Number parseXXX()
-  Number('42px'); // returns NaN, Number is stricter than Number parseXXX()
+  Number('3.14someRandomStuff'); // returns NaN, Number is stricter than parseXXX()
+  Number('42px'); // returns NaN, Number is stricter than  parseXXX()
 ```
 
 ### TypeScript
