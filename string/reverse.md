@@ -39,6 +39,14 @@
 ### Python
 - Use slice operator [start,stop,step]
 giving no field as start and stop indicates default to 0 and string length respectively and "-1" denotes starting from end and stop at the start.
+
+create a slice that starts with the length of the string, and ends at index 0.
+```
+  str = "Python" 
+  stringlength = len(str)
+  slicedString = str[stringlength::-1] 
+```
+Or
 ```
   string = string[::-1]
 ```
