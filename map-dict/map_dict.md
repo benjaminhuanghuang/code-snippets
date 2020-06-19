@@ -65,24 +65,7 @@ const expectedCounts = new Map(Object.entries(
   }))   
 ```
 ## Access item
-### C++
-```
-std::map<int, std::vector<std::string>> _roster;
-_roster[grade]    // will create item automatically
-```
-```
- if(_roster.find(grade) == _roster.end())
- {
 
- }
-
- if (!_roster.count(grade))
-  {
-    return std::vector<std::string>();
-  }
-
-  return _roster.at(grade);
-```
 ## Iteration
 ### C++
 ```
