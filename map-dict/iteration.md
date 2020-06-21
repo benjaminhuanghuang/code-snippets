@@ -1,6 +1,6 @@
 
 
-
+### C+++
 ```
  std::map<std::string, int>::iterator it = mapOfWordCount.begin();
     // Iterate over the map using Iterator till end.
@@ -17,3 +17,5 @@
         lucky = elem.first;
   }
 ```
+
+### JavaScript

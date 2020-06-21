@@ -17,3 +17,14 @@ counter[grade]    // will create item automatically
 
   return roster.at(grade);
 ```
+
+### JavaScript
+```
+  users = new Map();
+
+  
+  if(users.has(name))
+  {
+
+  }
+```
