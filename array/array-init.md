@@ -4,11 +4,11 @@
 ```
   T arr[5];
    
-  int foo [5] = { 16, 2, 77, 40, 12071 };
+  int foo[5] = { 16, 2, 77, 40, 12071 };
 
-  int bar [5] = { 10, 20, 30 };    // expected [10, 20, 30 , 0, 0]
+  int bar[5] = { 10, 20, 30 };    // expected [10, 20, 30 , 0, 0]
 
-  int baz [5] = { };               // expected [0, 0, 0 , 0, 0]
+  int baz[5] = { };               // expected [0, 0, 0 , 0, 0]
 
   int array[100] = {0};
 

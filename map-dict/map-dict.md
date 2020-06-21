@@ -147,8 +147,22 @@ Using map.keySet(), map.values(), map.entrySet()
   }
 ```
 
-- JavaScript
+### JavaScript
+```
+  users = new Map();
 
+  if(users.has(name))
+  {
+
+  }
+
+
+  users.set(name, age);
+
+
+  users.delete(name);
+
+```
 ## Calculate char numbers
 - Java
 
