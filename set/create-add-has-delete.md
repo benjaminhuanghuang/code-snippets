@@ -1,21 +1,16 @@
-# Hash map / Dictionary
-
-
-# Create map
 ### C++
 ```
   #include <map>
   using namespace std;
-  // C++ 11
-  map<int, char> m = {
-    {1, 'a'}, 
-    {3, 'b'}, 
-    {5, 'c'}, 
-    {7, 'd'}
-  };
 
-  // alias
-  typedef std::map<char, int> nucle_map;
+
+  set<int> suns;
+
+
+  suns.insert(i);
+
+  suns.erase(it);
+
 ```
 ### Java
 ```
