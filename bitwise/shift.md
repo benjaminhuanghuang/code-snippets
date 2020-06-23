@@ -1,6 +1,8 @@
 ## Shift
 ### C++
 ```
+// >> operator is sensitive to the operator's signed status
+
 ```
 ### Go
 ```

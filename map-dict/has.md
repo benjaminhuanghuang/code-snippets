@@ -28,3 +28,18 @@ counter[grade]    // will create item automatically
 
   }
 ```
+
+### Java
+```
+  Map<Integer, Integer> map = new HashMap<>();
+  
+  if (map.containsKey(nums[i])) {
+  }
+
+  if(map.containsValue(3)) {
+  }
+```
+
+
+### C#
+

@@ -220,12 +220,7 @@ Using map.keySet(), map.values(), map.entrySet()
 ## Exist or not
 ### Java
 ```
-  Map<Integer, Integer> map = new HashMap<>();
-  if (map.containsKey(nums[i])) {
-  }
-
-  if(map.containsValue(3)) {
-  }
+ 
 ```
 ### C#
 ```

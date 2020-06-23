@@ -10,12 +10,20 @@
     }
    
 ```
-- Use rang based for loop
+- Use range based for loop
 ```
  for (auto const& elem : map) {
     if (elem.first == elem.second) 
         lucky = elem.first;
   }
 ```
+- Use range based for loop 2
+```
+ for (pair<const string, int> elem : map) {
+    if (elem.first == elem.second) 
+        lucky = elem.first;
+  }
+```
+
 
 ### JavaScript
