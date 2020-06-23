@@ -1,7 +1,7 @@
 ## Class
 
 ```
-class MyTsClass {
+class MyTsClass extends BaseClass {
   static readonly MILLISECONDS_IN_A_GIGASECOND = 1e12;
 
   constructor() {}
