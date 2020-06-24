@@ -1,6 +1,17 @@
 ## Define types
 - Define a type
 ```
+  type a = string;
+
+  type UserTy = {
+    name: string
+    age: number
+  };
+
+  // function
+  type SetUserTy = (name: string, age: number) => void;
+
+
   type OriginalType = {[K:string]: string[]};
   type NewType= {[K:string]: number};
 ```
