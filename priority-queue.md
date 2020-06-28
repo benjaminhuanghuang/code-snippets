@@ -1,6 +1,27 @@
 ## Priority Queue
 ### C++
+```
+#include <queue>;
 
+priority_queue<int> q;    // return the largest (by default use less<int>) element
+
+
+
+```
+- Init priority queue
+```
+  int myints[]= {10,60,50,20};
+  std::priority_queue<int> second (myints,myints+4);
+
+```
+
+- Init priority queue with compare
+```
+  
+  std::priority_queue<int, std::vector<int>, std::greater<int>> third (myints,myints+4);
+
+  std::priority_queue<int, std::vector<int>, std::less<int>> smaller;
+```
 
 ### Java
 ```

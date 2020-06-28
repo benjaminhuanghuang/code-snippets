@@ -9,6 +9,10 @@
 ```
 	std::sort(vec.rbegin(), vec.rend());
 ```
+- Use comp
+````
+  sort(begin(A), end(A), greater<int>());
+```
 
 - Use std::sort() and lambda function
 ```

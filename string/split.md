@@ -18,3 +18,11 @@ vector<string> splitSentence(const string &text)
   return words;
 }
 ```
+- Use >>
+```
+  stringstream sb(B);
+  string word;
+  while (sb >> word) {
+      map[word]++;
+  }
+```
