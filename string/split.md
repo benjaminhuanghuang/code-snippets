@@ -18,6 +18,13 @@ vector<string> splitSentence(const string &text)
   return words;
 }
 ```
+- Split input to variables
+```
+  stringstream ss(date);   // date = "20th Oct 2052"
+  string day, month, year;
+  ss >> day >> month >> year;
+```
+
 - Use >>
 ```
   stringstream sb(B);

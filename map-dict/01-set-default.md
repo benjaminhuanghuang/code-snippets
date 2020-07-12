@@ -1,7 +1,10 @@
 ### C++
 ```
+  unordered_map<int, int> counter;
 
-
+  for(auto i : nums){
+      counter[i]++;
+  }
 ```
 ### C
 ```
@@ -12,7 +15,7 @@
 ```
 ```
 ### Java
-Check map.containsKey
+- Check map.containsKey
 ```
   Map<Character, Integer> map = new HashMap<>();
   for (int i = 0; i < str.length(); i++) {
@@ -24,7 +27,7 @@ Check map.containsKey
       }
   }
 ```
-Or use getOrDefault（JDK 8）
+- Or use getOrDefault（JDK 8）
 ```
   Map<Integer, Integer> map = new HashMap<>();
   for (int num : nums) {
@@ -37,7 +40,9 @@ Or use getOrDefault（JDK 8）
 
 ```
 ### Python
+- Use Counter() method
 ```
+  for v in Counter(nums).values()
 
 ```
 

@@ -142,6 +142,9 @@ Using map.keySet(), map.values(), map.entrySet()
   }
 
   HashMap<String, Integer> map = new HashMap<>();
+
+  map.set("A", 1);
+  
   int max = 0;
   for (Map.Entry<String, Integer> entry : map.entrySet()) {
       if (entry.getValue() > max) {

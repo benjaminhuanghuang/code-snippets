@@ -19,8 +19,28 @@ priority_queue<int> q;    // return the largest (by default use less<int>) eleme
 ```
   
   std::priority_queue<int, std::vector<int>, std::greater<int>> third (myints,myints+4);
-
+  // By default
   std::priority_queue<int, std::vector<int>, std::less<int>> smaller;
+```
+
+- Init priority queue with custimized compare
+```
+  // A priority queue is a container adaptor that provides constant time lookup of the largest (by default) element, 
+  //      at the expense of logarithmic insertion and extraction. 
+  // Compare parameter is defined such that it returns true if its first argument comes before its second 
+  auto comp = [](ListNode *a, ListNode *b) { return a->val > b->val; };
+  priority_queue<ListNode, vector<ListNode *>, decltype(comp)> pq(comp);
+```  
+
+- Priority queue of pairs
+```
+  priority_queue<pair<int, int>> q;  // from small to large, ordered by first element
+
+  // Sort by frequency
+  for (const auto &pair : count)
+  {
+    q.emplace(-pair.second, pair.first);   // emplace a pair
+  }
 ```
 
 ### Java
