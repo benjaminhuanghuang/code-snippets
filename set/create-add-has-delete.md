@@ -20,36 +20,10 @@
 
 ### C#
 ```  
-Dictionary<char, char> stMap = new Dictionary<char, char>();
-Dictionary<char, char> tsMap = new Dictionary<char, char>();
-
-for (int i =0; i < s.Length; i++)
-{
-  if(!stMap.ContainsKey(s[i]))
-  {
-      stMap.Add(s[i], t[i]);
-  }
-  else
-  {
-      if(stMap[s[i]] != t[i])
-
-  }
 
 ```
 ### Python
-```
-  sdict = {}
-  tdict = {}
 
-  for i, j in zip(s, t):   # good !
-      if i not in sdict:
-          sdict[i] = j
-      if j not in tdict:
-          tdict[j] = i
-      if sdict[i] != j or tdict[j] != i:
-          return False
-
-```
 ### JavaScript
 Method 1
 ```

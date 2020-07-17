@@ -25,7 +25,7 @@ vector<string> splitSentence(const string &text)
   ss >> day >> month >> year;
 ```
 
-- Use >>
+- Split input, check it in loop or add it to array
 ```
   stringstream sb(B);
   string word;
