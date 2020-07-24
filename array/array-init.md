@@ -1,6 +1,7 @@
 ## Create array with init value
 ### C++
 - Init array
+- http://www.cplusplus.com/doc/tutorial/arrays/
 ```
   T arr[5];
    
@@ -10,7 +11,7 @@
 
   int baz[5] = { };               // expected [0, 0, 0 , 0, 0]
 
-  int array[100] = {0};
+  int array[100] = {0};           // old style!
 
   int array[100] = { [0 ... 99] = -1 };   // gcc extension
 
@@ -105,12 +106,19 @@ n, m = len(grid), len(grid[0])
 res = [[0] * m for _ in range(n)]
 ```
 
-- JavaScript
+### JavaScript
 - Create Array and fill
 ```
   const days = new Array(n).fill(null).concat([])
 ```
 
+- init array
+```
+  var initNums = new Array(maxChoosableInteger).fill(0);
+  initNums = initNums.map((item, index)=>{
+    return index + 1;
+  });
+```
 - fill element at position
 ```
   var cars = ["Saab", "Volvo", "BMW"];
