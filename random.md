@@ -7,8 +7,11 @@ Old style:
 要取得[a,b)的随机整数，使用(rand() % (b-a))+ a;
 要取得[a,b]的随机整数，使用(rand() % (b-a+1))+ a;
 要取得(a,b]的随机整数，使用(rand() % (b-a))+ a + 1;
+
 通用公式:a + rand() % n；其中的a是起始值，n是整数的范围。
+
 要取得a到b之间的随机整数，另一种表示：a + (int)b * rand() / (RAND_MAX + 1)。
+
 要取得0～1之间的浮点数，可以使用rand() / double(RAND_MAX)。
  
 #include <random>
@@ -20,10 +23,10 @@ int myRandom(int lower, int upper, int count)
 } 
  
 ```
-- C++11 introduced `<random>` 
+### C++11 introduced <random> 
 
 In the constructor you call srand() and in generateName() you call rand().
-Officially std::srand() and std::rand() are declared in `<cstdlib>`
+Officially std::srand() and std::rand() are declared in <cstdlib>
 
 std::rand() has a few know problems:
 
@@ -31,7 +34,10 @@ Some implementations of rand() were notoriously bad and there was nothing in the
 The range of numbers returned by rand() is 0-RAND_MAX which might be as low as 32767.
 rand() is **not guaranteed to be thread-safe**.
 Without seeding by the user rand() every run of the program produces the same random numbers.
-C++11 introduced <random> which fixes all these problems of std::rand(). There's a [helpful example](https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution#Example) at cppreference.com.
+
+C++11 introduced <random> which fixes all these problems of std::rand(). 
+
+There's a [helpful example](https://en.cppreference.com/w/cpp/numeric/random/uniform_int_distribution#Example) at cppreference.com.
 
 <random> is not as easy to use as std::rand() but you should at least know that and why it exists.
 ```
@@ -46,6 +52,7 @@ std::uniform_int_distribution<> randomChar{'A', 'Z'};
 
 char randomChar = randomChar(random_num_engine();
 ```
+
 ### Java
 java中一般有两种随机数，一个是Math中random()方法，一个是Random类。
 ```
