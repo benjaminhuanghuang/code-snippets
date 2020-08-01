@@ -89,7 +89,14 @@ Object.assign([], string);
   str = '12345'
   chars = list(str)      # conver string to char list
   newStr = ''.join(chars)
+
+
 ```
+- Process char in string
+```
+  new_str = [fun(c) for c in str]
+```
+
 
 ### JavaScript
 - Use join()
