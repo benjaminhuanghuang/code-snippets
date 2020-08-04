@@ -33,3 +33,10 @@ vector<string> splitSentence(const string &text)
       map[word]++;
   }
 ```
+- Split string
+```
+  char action[6];
+  int fid;
+  int curr;
+  sscanf(log.c_str(), "%d:%[a-z]:%d", &fid, action, &curr);
+```
