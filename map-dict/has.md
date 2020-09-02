@@ -19,6 +19,7 @@ counter[grade]    // will create item automatically
 ```
 
 ### JavaScript
+- Use Map
 ```
   users = new Map();
 
@@ -28,7 +29,12 @@ counter[grade]    // will create item automatically
 
   }
 ```
-
+- Use {}
+```
+  if(map[a] === undefined){
+    map[a] = 0;
+  }
+```
 ### Java
 ```
   Map<Integer, Integer> map = new HashMap<>();
