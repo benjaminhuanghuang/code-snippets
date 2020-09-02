@@ -7,10 +7,14 @@
    
   int foo[5] = { 16, 2, 77, 40, 12071 };
 
+  // If there are more elements than numbers in the list, C++ pads the list with zeros
   int bar[5] = { 10, 20, 30 };    // expected [10, 20, 30 , 0, 0]
 
-  int baz[5] = { };               // expected [0, 0, 0 , 0, 0]
+  // the first element (bar[0]) is set to 1. Every other element gets initialized to zero.
+  int bar[5] = {1};
 
+  int baz[5] = { };               // expected [0, 0, 0 , 0, 0]
+  // declares the array but initializes every element in the array to zero.
   int array[100] = {0};           // old style!
 
   int array[100] = { [0 ... 99] = -1 };   // gcc extension
