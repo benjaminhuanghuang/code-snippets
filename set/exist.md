@@ -1,7 +1,10 @@
 ## Exist
 ### C++
 ```
-
+if (s.find(nums[i]) != s.end())
+{
+  
+}
 
 ```
 ### C
