@@ -1,13 +1,14 @@
 
 
-### C+++
+### C++
+Use the iterator
 ```
  std::map<std::string, int>::iterator it = mapOfWordCount.begin();
-    // Iterate over the map using Iterator till end.
-    while (it != mapOfWordCount.end())
-    {
+  // Iterate over the map using Iterator till end.
+  while (it != mapOfWordCount.end())
+  {
 
-    }
+  }
    
 ```
 - Use range based for loop
@@ -17,7 +18,7 @@
         lucky = elem.first;
   }
 ```
-- Use range based for loop 2
+- Use range based pair for loop 
 ```
  for (pair<const string, int> elem : map) {
     if (elem.first == elem.second) 
