@@ -1,3 +1,18 @@
+### C
+```
+  typedef enum planet {
+    MERCURY,
+    VENUS,
+    EARTH,
+    MARS,
+    JUPITER,
+    SATURN,
+    URANUS,
+    NEPTUNE,
+  } planet_t;
+
+```  
+
 ### C++
 Using static_cast<T>
 ```
@@ -40,8 +55,19 @@ Using static_cast<T>
 
 ```
 ### Python
-```
+New in version 3.4
 
+```
+  from enum import Enum
+
+  class Color(Enum):
+    RED = 1
+    GREEN = 2
+    BLUE = 3
+
+  for color in Color:
+    print(color)
+    
 ```
 
 
