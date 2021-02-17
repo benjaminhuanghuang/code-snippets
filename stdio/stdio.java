@@ -9,6 +9,8 @@ public class stdio {
         // rede string
         String str = scan.next();
 
+        scan.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
         scan.close();
 
         System.out.println(a);
