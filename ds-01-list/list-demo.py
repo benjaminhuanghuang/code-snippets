@@ -37,6 +37,20 @@ print(t)
 
 
 #
+# filter
+#
+seq = [0, 1, 2, 3, 5, 8, 13] 
+  
+# Use filter(function, iterable) function
+result = filter(lambda x: x % 2 != 0, seq) 
+print(list(result)) 
+
+
+numbers = [1, 2, 3, 4]
+filtered_numbers = [n for n in numbers if n < 3]
+
+
+#
 # 内置函数
 #
 l = [4,8,1,6]
