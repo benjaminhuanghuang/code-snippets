@@ -6,6 +6,11 @@
         return abs(a[0]-r0) + abs(a[1]-c0) < abs(b[0]-r0) + abs(b[1]-c0) ;
     });
 ```
+descending order
+```
+  sort(arr, arr + n, greater<int>());
+```
+
 - Java
 ```
   List<String> letterLogs = new ArrayList<>();
