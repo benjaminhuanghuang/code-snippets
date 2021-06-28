@@ -13,6 +13,13 @@
   return new string(arr);
 ```
 
+### Rust
+```
+  pub fn reverse(s: &mut Vec<char>){
+    s.reverse();
+  }
+```
+
 ### Go
 ```
 ```
