@@ -38,6 +38,7 @@ Use substr(start, len)
 ### JavaScript
 
 - substring(start, end) returns sub string [start, end)
+
 ```
   anyString.substring(0, 1)
 ```
