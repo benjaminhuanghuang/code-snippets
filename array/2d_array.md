@@ -42,6 +42,18 @@ for (let i = 0; i < n; i++) {
     res[i] = new Array(m);
 }
 ```
+
+```
+/*
+ Array.from() method creates a new array instance from the specified array and optionally map each array element to a new value.
+*/
+const graph = Array.from(Array(5), () => []);
+
+var arr = Array.from({ length: 3 }, () => Array.from({ length: 4 }, () => val));
+
+var arr = Array.from(Array(R), () => Array(C).fill(val)); // BEST one
+```
+
 ### TypeScript
 ```
 ```
