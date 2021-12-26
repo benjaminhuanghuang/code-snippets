@@ -53,6 +53,10 @@ var arr = Array.from({ length: 3 }, () => Array.from({ length: 4 }, () => val));
 
 var arr = Array.from(Array(R), () => Array(C).fill(val)); // BEST one
 ```
+use map
+```
+const board = new Array(n).fill(0).map((_) => Array(n).fill("."));
+```
 
 ### TypeScript
 ```
